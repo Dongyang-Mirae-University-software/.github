@@ -108,11 +108,38 @@ AI 정서 분석 (HSEmotion)  → 표정·텍스트 분석 → 이상 심리 조
 
 ### 연동 서버
 
-| 파트       | 기술                              | 역할                                             |
-| ---------- | --------------------------------- | ------------------------------------------------ |
-| Backend    | Spring Boot / Java 17 / WebClient | 서비스 중심 로직, AI 서버 중계, 위험 이벤트 처리 |
-| AI Backend | Python / FastAPI / Docker         | 영상·센서 기반 위험 감지, YOLO 모델 연동         |
-| Test API   | Node.js / Docker / MariaDB        | 병원 예약·의료 데이터 테스트 환경                |
+## 4. 기술 스택
+
+### 4.1 Frontend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeFe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeFe)
+
+| 분류      | 기술                          |
+| --------- | ----------------------------- |
+| Framework | Next.js (SSR + CSR 혼합 구조) |
+| Language  | TypeScript                    |
+| UI        | React, CSS Modules            |
+| 서버 통신 | Axios, React Query            |
+| 인프라    | Docker, Nginx (reverse proxy) |
+
+### 4.2 Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeBe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe)
+
+| 분류                 | 기술                          |
+| -------------------- | ----------------------------- |
+| Language / Framework | Java 21 / Spring Boot 4       |
+| ORM                  | JPA, Hibernate                |
+| 통신                 | WebClient, WebSocket, SSE     |
+| Database             | PostgreSQL, Redis             |
+| 인프라               | Docker, Nginx, GitHub Actions |
+
+### 4.3 AI Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAi-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAi)
+
+| 분류                 | 기술                  |
+| -------------------- | --------------------- |
+| Language / Framework | Python / FastAPI      |
+| 감지 모델            | YOLO (화재·흉기·낙상) |
+| 의료 챗봇            | MedGemma, GPT         |
+| 감정 분석            | HSEmotion             |
+| AI 말벗              | EXAONE                |
+| 인프라               | Docker, PyTorch       |
 
 ## 5. 개발 현황 (1학기 기말 기준)
 
@@ -139,6 +166,14 @@ AI 정서 분석 (HSEmotion)  → 표정·텍스트 분석 → 이상 심리 조
 
 ## 7. 시연 영상 / 발표 자료
 
-- YouTube 시연 영상: https://www.youtube.com/watch?v=y4lUm_REdXM
-- 중간발표 PPT: [중간발표\_자료](docs/실버브릿지_중간발표.pptx)
-- 최종발표 PPT: [최종발표\_자료](docs/실버브릿지_최종발표.pptx)
+- YouTube 시연 영상:
+
+  [![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM)
+
+- 중간발표 PPT:
+
+  [![PPT](https://img.shields.io/badge/중간발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_중간발표.pptx)
+
+- 최종발표 PPT:
+
+  [![PPT](https://img.shields.io/badge/최종발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_최종발표.pptx)

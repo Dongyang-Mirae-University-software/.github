@@ -1,40 +1,16 @@
-<h1 align="center">🌉 SilverBridge · CareAI</h1>
+# 🌉 SilverBridge의 CareAI
 
-<p align="center">
-  <b>AI 기반 독거노인 통합 케어 플랫폼</b><br/>
-  위험 감지 → 의료 상담 → 병원 예약까지, 하나의 흐름으로 연결합니다.
-</p>
+**AI 기반 독거노인 통합 케어 플랫폼** — 위험 감지 → 의료 상담 → 병원 예약까지 하나의 흐름으로 연결합니다.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-4.0-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-</p>
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.0-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=y4lUm_REdXM"><img src="https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
-  <a href="docs/실버브릿지_브로셔.pdf"><img src="https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="브로셔"/></a>
-</p>
-
-<p align="center">
-  <a href="#1-프로젝트-소개">소개</a> ·
-  <a href="#2-주요-기능">주요 기능</a> ·
-  <a href="#3-서비스-아키텍처--흐름">아키텍처</a> ·
-  <a href="#4-기술-스택">기술 스택</a> ·
-  <a href="#5-개발-현황">개발 현황</a> ·
-  <a href="#6-팀-구성">팀</a> ·
-  <a href="#7-시연-영상--발표-자료">시연·자료</a> ·
-  <a href="#8-저장소-목록">저장소</a>
-</p>
+[![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM) [![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf)
 
 ---
 
 ## 1. 프로젝트 소개
 
-CareAI는 독거노인 및 취약계층을 위한 **의료 AI 통합 서비스**입니다.
+CareAI는 독거노인 및 취약계층을 대상으로 설계된 **의료 AI 통합 서비스**입니다.
 
 > **2050년, 대한민국 인구의 40%는 65세 이상 시니어입니다.**
 > 1인 가구 노인의 치매 유병률은 **52.6%** 로 전체 가구 형태 중 가장 높고,
@@ -42,18 +18,19 @@ CareAI는 독거노인 및 취약계층을 위한 **의료 AI 통합 서비스**
 
 기존 서비스가 '알려주는 것'에 집중했다면, SilverBridge CareAI는 **대처하게 만드는 것**까지 포함합니다.
 
+주요 기능은 크게 3가지입니다.
+
 | | 핵심 기능 | 내용 |
 | :---: | --- | --- |
-| 🚨 | **위급 상황 감지** | 실시간 영상 AI가 낙상·화재·흉기를 감지하면 자동 신고 및 보호자·관리자에게 즉시 알림 |
+| 🚨 | **위급 상황** | 실시간 영상 AI가 낙상·화재·흉기를 감지하면 자동 신고 및 보호자·관리자에게 즉시 알림 |
 | 🏥 | **병원 예약** | AI 의료 챗봇으로 증상 상담 → 진료과 추천 → 병원 예약까지 원스톱 연결 |
 | 💛 | **정서·인지 케어** | 안부 대화 기반 정서 상태 체크 + 치매 예방 인지훈련 게임으로 지속적 건강 관리 |
 
-<table>
-  <tr>
-    <td align="center" width="50%"><img src="./images/Newimages/피보호자-SOS.png" alt="피보호자 SOS 화면"/><br/><sub><b>위급 상황 SOS</b></sub></td>
-    <td align="center" width="50%"><img src="./images/Newimages/보호자웹-병원예약.png" alt="보호자 웹 병원 예약 화면"/><br/><sub><b>AI 챗봇 병원 예약</b></sub></td>
-  </tr>
-</table>
+| | |
+|:---:|:---:|
+| ![위급 상황 SOS](./images/Newimages/피보호자-SOS.png)<br/>**위급 상황 SOS** | ![AI 챗봇 병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**AI 챗봇 병원 예약** |
+
+SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을 감지하는 것에서 끝나지 않고 의료 상담과 병원 예약까지 자연스럽게 이어주는 의료 AI 통합 서비스입니다.
 
 ---
 
@@ -66,12 +43,9 @@ CareAI는 독거노인 및 취약계층을 위한 **의료 AI 통합 서비스**
 - JWT 기반 세션 유지 및 계정 복구
 - 역할별(피보호자·보호자) 화면 분기
 
-<table>
-  <tr>
-    <td align="center" width="50%"><img src="./images/signup.png" alt="회원가입 화면"/><br/><sub>회원가입</sub></td>
-    <td align="center" width="50%"><img src="./images/login.png" alt="로그인 화면"/><br/><sub>로그인</sub></td>
-  </tr>
-</table>
+| | |
+|:---:|:---:|
+| ![회원가입](./images/signup.png)<br/>**회원가입** | ![로그인](./images/login.png)<br/>**로그인** |
 
 ### 2.2 피보호자 화면
 
@@ -83,22 +57,13 @@ CareAI는 독거노인 및 취약계층을 위한 **의료 AI 통합 서비스**
 - 치매 예방 인지훈련 게임
 - 공지사항, 환경설정
 
-<table>
-  <tr>
-    <td align="center" width="20%"><img src="./images/Newimages/피보호자-메인화면.png" alt="메인 화면"/><br/><sub>메인 화면</sub></td>
-    <td align="center" width="20%"><img src="./images/Newimages/피보호자-카메라%20송출.png" alt="카메라 송출"/><br/><sub>카메라 송출</sub></td>
-    <td align="center" width="20%"><img src="./images/Newimages/피보호자-카메라%20송출2.png" alt="카메라 송출 중"/><br/><sub>송출 중</sub></td>
-    <td align="center" width="20%"><img src="./images/Newimages/피보호자-SOS.png" alt="SOS"/><br/><sub>SOS</sub></td>
-    <td align="center" width="20%"><img src="./images/Newimages/피보호자-내보호자.png" alt="내 보호자"/><br/><sub>내 보호자</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./images/Newimages/보호자웹-AI챗봇.png" alt="AI 챗봇"/><br/><sub>AI 챗봇</sub></td>
-    <td align="center"><img src="./images/Newimages/보호자웹-병원예약.png" alt="병원 예약"/><br/><sub>병원 예약</sub></td>
-    <td align="center"><img src="./images/Newimages/피보호자-병원예약%20현황.png" alt="예약 현황"/><br/><sub>예약 현황</sub></td>
-    <td align="center"><img src="./images/Newimages/피보호자-복약.png" alt="복약"/><br/><sub>복약 관리</sub></td>
-    <td align="center"><img src="./images/Newimages/피보호자-게임.png" alt="인지훈련 게임"/><br/><sub>인지훈련 게임</sub></td>
-  </tr>
-</table>
+| | |
+|:---:|:---:|
+| ![메인 화면](./images/Newimages/피보호자-메인화면.png)<br/>**메인 화면** | ![카메라 송출](./images/Newimages/피보호자-카메라%20송출.png)<br/>**카메라 송출** |
+| ![카메라 송출 중](./images/Newimages/피보호자-카메라%20송출2.png)<br/>**카메라 송출 중** | ![SOS](./images/Newimages/피보호자-SOS.png)<br/>**SOS 호출** |
+| ![내 보호자](./images/Newimages/피보호자-내보호자.png)<br/>**내 보호자** | ![AI 챗봇](./images/Newimages/보호자웹-AI챗봇.png)<br/>**AI 의료 챗봇** |
+| ![병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**병원 예약** | ![예약 현황](./images/Newimages/피보호자-병원예약%20현황.png)<br/>**예약 현황** |
+| ![복약](./images/Newimages/피보호자-복약.png)<br/>**복약 관리** | ![인지훈련 게임](./images/Newimages/피보호자-게임.png)<br/>**인지훈련 게임** |
 
 ### 2.3 보호자 화면
 
@@ -111,23 +76,13 @@ CareAI는 독거노인 및 취약계층을 위한 **의료 AI 통합 서비스**
 - 복약 관리
 - 정서 상태 체크 (하루 5회 안부 대화 기록·감정 상태 확인)
 
-<table>
-  <tr>
-    <td align="center" width="33%"><img src="./images/Newimages/보호자웹-대시보드.png" alt="대시보드"/><br/><sub>대시보드</sub></td>
-    <td align="center" width="33%"><img src="./images/Newimages/보호자웹-이상감지_메인.png" alt="이상감지 메인"/><br/><sub>이상감지 이력</sub></td>
-    <td align="center" width="33%"><img src="./images/Newimages/보호자웹-이상감지_모달.png" alt="이상감지 영상 확인"/><br/><sub>이상 발생 영상 확인</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./images/Newimages/보호자웹-AI챗봇.png" alt="AI 챗봇"/><br/><sub>AI 의료 챗봇</sub></td>
-    <td align="center"><img src="./images/Newimages/보호자웹-보호자_연결.png" alt="보호자 연결"/><br/><sub>피보호자 연결</sub></td>
-    <td align="center"><img src="./images/Newimages/보호자웹-병원예약.png" alt="병원 예약"/><br/><sub>병원 예약</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./images/Newimages/보호자웹-복약관리.png" alt="복약 관리"/><br/><sub>복약 관리</sub></td>
-    <td align="center"><img src="./images/Newimages/보호자웹-SOS.png" alt="SOS 수신 이력"/><br/><sub>SOS 수신 이력</sub></td>
-    <td align="center"><img src="./images/Newimages/보호자웹-정서상태체크.png" alt="정서 상태 체크"/><br/><sub>정서 상태 체크</sub></td>
-  </tr>
-</table>
+| | |
+|:---:|:---:|
+| ![대시보드](./images/Newimages/보호자웹-대시보드.png)<br/>**대시보드** | ![이상감지 메인](./images/Newimages/보호자웹-이상감지_메인.png)<br/>**이상감지 이력** |
+| ![이상감지 모달](./images/Newimages/보호자웹-이상감지_모달.png)<br/>**이상 발생 영상 확인** | ![AI 챗봇](./images/Newimages/보호자웹-AI챗봇.png)<br/>**AI 의료 챗봇** |
+| ![보호자 연결](./images/Newimages/보호자웹-보호자_연결.png)<br/>**피보호자 연결** | ![병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**병원 예약** |
+| ![복약 관리](./images/Newimages/보호자웹-복약관리.png)<br/>**복약 관리** | ![SOS](./images/Newimages/보호자웹-SOS.png)<br/>**SOS 수신 이력** |
+| ![정서 상태 체크](./images/Newimages/보호자웹-정서상태체크.png)<br/>**정서 상태 체크** | |
 
 ### 2.4 알림
 
@@ -136,18 +91,18 @@ CareAI는 독거노인 및 취약계층을 위한 **의료 AI 통합 서비스**
 - 카카오 알림톡
 - 알림 유형별 설정 화면
 
-<p align="center">
-  <img src="./images/Newimages/보호자웹-환경설정.png" alt="알림 환경설정" width="60%"/>
-</p>
+| | |
+|:---:|:---:|
+| ![알림 환경설정](./images/Newimages/보호자웹-환경설정.png)<br/>**알림 환경설정** | |
 
 ### 2.5 공통
 
 - 마이페이지
 - 공지사항 조회 / 1:1 문의
 
-<p align="center">
-  <img src="./images/Newimages/보호자웹-공지.png" alt="공지사항" width="60%"/>
-</p>
+| | |
+|:---:|:---:|
+| ![공지사항](./images/Newimages/보호자웹-공지.png)<br/>**공지사항** | |
 
 ---
 
@@ -172,15 +127,15 @@ flowchart LR
 
 **🚨 긴급 상황**
 
-```text
-카메라 → AI 분석 (낙상·화재·흉기, YOLO) → 위험 판단
+```
+카메라 → AI 분석 (낙상·화재·흉기, YOLO 모델) → 위험 판단
   → 보호자·관리자 즉시 알림 (웹 푸시·이메일·SMS·카카오 알림톡)
 SOS 버튼 → 보호자 즉시 알림
 ```
 
 **🏥 평소 상황**
 
-```text
+```
 AI 의료 챗봇 → 증상 채팅 입력 → Claude 라우터가 모드 자동 분기
   ├─ 응급 증상  → 응급 키워드 강제 감지 + MedGemma 의료 LLM 답변
   ├─ 병원 예약  → Claude 기반 예약 대화 → 병원 검색 → 예약 연결
@@ -189,11 +144,11 @@ AI 의료 챗봇 → 증상 채팅 입력 → Claude 라우터가 모드 자동 
 
 **💛 정서·인지 케어**
 
-```text
-치매 예방 인지훈련 게임    → 기억력·집중력 훈련                          (구현)
-정서 상태 체크 (안부 대화) → 하루 5회 안부 → 보호자 화면에서 감정 확인    (화면 구현)
-AI 말벗 (EXAONE)          → 음성 대화 → 외로움 해소·정서 케어             (개발 중)
-AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 조기 감지       (개발 중)
+```
+치매 예방 인지훈련 게임    → 기억력·집중력 훈련 (구현)
+정서 상태 체크 (안부 대화) → 하루 5회 안부 → 보호자 화면에서 감정 상태 확인 (화면 구현)
+AI 말벗 (EXAONE)          → 음성 대화 → 외로움 해소·정서 케어 (개발 중)
+AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 조기 감지 (개발 중)
 ```
 
 ---
@@ -233,7 +188,7 @@ AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 �
 | 인지훈련 게임 | FastAPI + SQLAlchemy |
 | 인프라 | Docker, PyTorch |
 
-> 💡 정서 분석(HSEmotion)·AI 말벗(EXAONE)은 현재 개발 중입니다.
+> 정서 분석(HSEmotion)·AI 말벗(EXAONE)은 현재 개발 중입니다.
 
 ---
 
@@ -253,16 +208,26 @@ AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 �
 | 통합 테스트 / 운영 배포 | ✅ 완료 |
 | 정서 체크 (AI 정서 분석 · AI 말벗) | 🔄 개발 중 |
 
+### AI 모델 개선
+
+- **흉기 감지**: 초기 인식률이 낮아 데이터셋을 재구성해 재학습하고 성능을 개선했습니다.
+- **화재 감지**: 테스트에서 오감지가 많아 데이터셋을 재구성해 재학습했습니다.
+
+### 한계 및 향후 계획
+
+- 앉기·눕기 등 유사 행동과 구분이 어려워 오탐·미탐이 발생할 수 있으며, 데이터 보강으로 개선 중입니다.
+- 정서 체크(AI 말벗 EXAONE, 표정·텍스트 분석 HSEmotion) 완성 후 보호자 화면과 연동할 예정입니다.
+
 ---
 
 ## 6. 팀 구성
 
 | 이름 | 역할 |
 | --- | --- |
-| **이하늘** | **팀장 / AI / Infra** — 병원 예약 시스템, 인프라 아키텍처, AI 챗봇, 치매 예방 게임 |
-| **남궁명진** | **Backend** — DB 설계, REST API, 인증/인가, 외부 서비스·AI 서버 연동, 품질/보안 관리 |
-| **이윤아** | **Frontend** — Next.js/React 컴포넌트, UI/UX 설계, 반응형 레이아웃, 백엔드 API 연동 |
-| **이재희** | **AI** — 정서 분석·이상감지·말벗 AI 개발 및 모델 학습 |
+| 이하늘 | **팀장 / AI / Infra** - 병원 예약 시스템, 인프라 아키텍처, AI 챗봇, 치매 예방 게임 |
+| 남궁명진 | **Backend** - DB 설계, REST API, 인증/인가, 외부 서비스·AI 서버 연동, 품질/보안 관리 |
+| 이윤아 | **Frontend** - Next.js/React 컴포넌트, UI/UX 설계, 반응형 레이아웃, 백엔드 API 연동 |
+| 이재희 | **AI** - 정서 분석·이상감지·말벗 AI 개발 및 모델 학습 |
 
 ---
 
@@ -270,18 +235,20 @@ AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 �
 
 ### 7.1 시연 영상
 
-[![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM)
+- **YouTube 시연 영상**
 
-**AI 이상감지 테스트 영상** (실제 가정 환경 CCTV 촬영)
+  [![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM)
 
-| 흉기 감지 | 낙상 감지 |
-| :---: | :---: |
-| [▶ 흉기감지_테스트.mp4](videos/흉기감지_테스트.mp4) | [▶ 낙상감지_테스트.mp4](videos/낙상감지_테스트.mp4) |
+- **AI 이상감지 테스트 영상** (실제 가정 환경 CCTV 촬영)
+
+  | 흉기 감지 | 낙상 감지 |
+  | --- | --- |
+  | [▶ 흉기감지_테스트.mp4](videos/흉기감지_테스트.mp4) | [▶ 낙상감지_테스트.mp4](videos/낙상감지_테스트.mp4) |
 
 ### 7.2 발표 자료 / 문서
 
 | 구분 | 파일 |
-| --- | :---: |
+| --- | --- |
 | 프로젝트 브로셔 | [![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf) |
 | 1학기 중간발표 (프로젝트 제안서) | [![PPT](https://img.shields.io/badge/중간발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_중간발표.pptx) |
 | 1학기 최종발표 | [![PPT](https://img.shields.io/badge/최종발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_최종발표.pptx) |

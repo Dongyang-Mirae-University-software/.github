@@ -14,15 +14,13 @@ AI 기반 독거노인 통합 케어 플랫폼 — 위험 감지 → 의료 상�
 
 ### 1. 위급 상황: 실시간 영상 AI가 낙상·화재·흉기를 감지하면 자동 신고 및 보호자·관리자에게 즉시 알림
 
-![sos](./images/ward-sos.png)
+![sos](./images/Newimages/피보호자-SOS.png)
 
 ### 2. 병원 예약: AI 의료 챗봇으로 증상 상담 → 진료과 추천 → 병원 예약까지 원스톱 연결
 
-![sos](./images/guardian-hospital.png)
+![sos](./images/Newimages/보호자웹-병원예약.png)
 
-### 3. 정서 케어: AI 말벗·정서 분석·치매 예방 인지훈련으로 지속적 건강 관리
-
-(화면 개발 예정)
+### 3. 정서·인지 케어: 안부 대화 기반 정서 상태 체크 + 치매 예방 인지훈련 게임으로 지속적 건강 관리
 
 SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을 감지하는 것에서 끝나지 않고 의료 상담과 병원 예약까지 자연스럽게 이어주는 의료 AI 통합 서비스입니다.
 
@@ -38,30 +36,43 @@ SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을
 
 ### 2.2 피보호자 화면
 
-- 실시간 영상 송출 화면
-- AI 이상감지 결과 화면 (화재·흉기·낙상)
-- 내 보호자 목록 조회
-- 보호자 연결 요청 수락 / 거절 / 해제
-- 환경설정
-- AI 말벗 대화 화면
-- 치매 예방 인지훈련 게임 화면
-  ![sos](./images/ward-dashboard.png)
-  ![sos](./images/ward-sos.png)
-  ![sos](./images/ward-stream.png)
-  ![sos](./images/ward-setting.png)
+- 카메라 실시간 영상 송출
+- 위급 상황 SOS 호출
+- 내 보호자 목록 조회 / 연결 요청 수락·거절·해제
+- AI 의료 챗봇, 병원 검색·예약
+- 복약 관리
+- 치매 예방 인지훈련 게임
+- 공지사항, 환경설정
+  ![sos](./images/Newimages/피보호자-메인화면.png)
+  ![sos](./images/Newimages/피보호자-카메라%20송출.png)
+  ![sos](./images/Newimages/피보호자-카메라%20송출2.png)
+  ![sos](./images/Newimages/피보호자-SOS.png)
+  ![sos](./images/Newimages/피보호자-내보호자.png)
+  ![sos](./images/Newimages/보호자웹-AI챗봇.png)
+  ![sos](./images/Newimages/보호자웹-병원예약.png)
+  ![sos](./images/Newimages/피보호자-병원예약%20현황.png)
+  ![sos](./images/Newimages/피보호자-복약.png)
+  ![sos](./images/Newimages/피보호자-게임.png)
 
 ### 2.3 보호자 화면
 
 - 보호자 홈 대시보드 (피보호자 상태 실시간 확인)
 - 피보호자 목록 조회 / 등록 요청 / 요청 내역 / 연결 해제
-- AI 이상감지 이력 조회
-- AI 의료 챗봇 화면 (응급 증상·병원 예약·일반 문의 모드 선택)
-- 병원 검색·예약·복약 알림 화면
-  ![sos](./images/guardian-dashboard.png)
-  ![sos](./images/knife-detection.png)
-  ![sos](./images/fire-detection.png)
-  ![sos](./images/guardian-chat.png)
-  ![sos](./images/guardian-ward.png)
+- AI 이상감지 이력 조회 (화재·흉기·낙상) 및 이상 발생 시 영상 확인
+- SOS 수신 이력
+- AI 의료 챗봇 (응급 증상·병원 예약·일반 문의 모드 자동 분기)
+- 병원 검색·예약
+- 복약 관리
+- 정서 상태 체크 (하루 5회 안부 대화 기록·감정 상태 확인)
+  ![sos](./images/Newimages/보호자웹-대시보드.png)
+  ![sos](./images/Newimages/보호자웹-이상감지_메인.png)
+  ![sos](./images/Newimages/보호자웹-이상감지_모달.png)
+  ![sos](./images/Newimages/보호자웹-AI챗봇.png)
+  ![sos](./images/Newimages/보호자웹-보호자_연결.png)
+  ![sos](./images/Newimages/보호자웹-병원예약.png)
+  ![sos](./images/Newimages/보호자웹-복약관리.png)
+  ![sos](./images/Newimages/보호자웹-SOS.png)
+  ![sos](./images/Newimages/보호자웹-정서상태체크.png)
 
 ### 2.4 알림
 
@@ -69,31 +80,50 @@ SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을
 - 이메일 / SMS 알림
 - 카카오 알림톡 (연동 진행 중)
 - 알림 유형별 설정 화면
-  ![sos](./images/guardian-alert.png)
+  ![sos](./images/Newimages/보호자웹-환경설정.png)
 
 ### 2.5 공통
 
 - 마이페이지
-- 공지사항 조회
-  ![sos](./images/guardian-notice.png)
+- 공지사항 조회 / 1:1 문의
+  ![sos](./images/Newimages/보호자웹-공지.png)
 
-## 3. 서비스 흐름
+## 3. 서비스 아키텍처 / 흐름
+
+```mermaid
+flowchart LR
+    W["피보호자 웹<br/>카메라·SOS·챗봇·복약·게임"] -->|영상 송출| AI
+    W --> FE
+    G["보호자 웹<br/>대시보드·이상감지·챗봇·예약"] --> FE
+    FE["Frontend<br/>Next.js"] -->|REST·WebSocket·SSE| BE["Backend<br/>Spring Boot"]
+    BE --- DB[("PostgreSQL<br/>Redis")]
+    BE <-->|이상감지·챗봇·게임| AI["AI Server<br/>FastAPI"]
+    AI --> YOLO["YOLO<br/>화재·흉기·낙상"]
+    AI --> LLM["MedGemma · Claude<br/>의료 챗봇"]
+    AI -->|병원 예약| RS["예약 서비스<br/>NestJS"]
+    BE -->|이상·SOS 알림| N["웹 푸시 · 이메일<br/>SMS · 알림톡"]
+    N --> G
+```
+
+### 서비스 흐름
 
 ```
 [긴급 상황]
 카메라 → AI 분석 (낙상·화재·흉기, YOLO 모델) → 위험 판단
-  → 자동 신고 → 보호자·관리자 즉시 알림 (웹 푸시·이메일·SMS)
+  → 보호자·관리자 즉시 알림 (웹 푸시·이메일·SMS·카카오 알림톡)
+SOS 버튼 → 보호자 즉시 알림
 
 [평소 상황]
-AI 의료 챗봇 → 증상 채팅 입력 → 모드 자동 분기
-  ├─ 응급 증상  → MedGemma 의료 LLM 답변
-  ├─ 병원 예약  → GPT 기반 예약 대화 → 병원 검색 → 예약 연결
-  └─ 일반 문의  → GPT 기반 답변
+AI 의료 챗봇 → 증상 채팅 입력 → Claude 라우터가 모드 자동 분기
+  ├─ 응급 증상  → 응급 키워드 강제 감지 + MedGemma 의료 LLM 답변
+  ├─ 병원 예약  → Claude 기반 예약 대화 → 병원 검색 → 예약 연결
+  └─ 일반 문의  → 일반 안내 답변
 
 [정서·인지 케어]
-AI 말벗 (EXAONE)         → 음성 대화 → 외로움 해소·정서 케어
-AI 정서 분석 (HSEmotion)  → 표정·텍스트 분석 → 이상 심리 조기 감지
-치매 예방 인지훈련 게임   → 기억력·집중력 훈련
+치매 예방 인지훈련 게임   → 기억력·집중력 훈련 (구현)
+정서 상태 체크 (안부 대화) → 하루 5회 안부 → 보호자 화면에서 감정 상태 확인 (화면 구현)
+AI 말벗 (EXAONE)         → 음성 대화 → 외로움 해소·정서 케어 (개발 예정)
+AI 정서 분석 (HSEmotion)  → 표정·텍스트 분석 → 이상 심리 조기 감지 (개발 예정)
 ```
 
 ## 4. 기술 스택
@@ -102,46 +132,51 @@ AI 정서 분석 (HSEmotion)  → 표정·텍스트 분석 → 이상 심리 조
 
 | 분류      | 기술                          |
 | --------- | ----------------------------- |
-| Framework | Next.js (SSR + CSR 혼합 구조) |
+| Framework | Next.js 16 (SSR + CSR 혼합 구조) |
 | Language  | TypeScript                    |
-| UI        | React, CSS Modules            |
-| 서버 통신 | Axios, React Query            |
+| UI        | React 19, CSS Modules         |
+| 서버 통신 | Axios, TanStack React Query   |
+| 알림      | FCM (웹 푸시)                 |
 | 인프라    | Docker, Nginx (reverse proxy) |
 
 ### 4.2 Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeBe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe)
 
 | 분류                 | 기술                          |
 | -------------------- | ----------------------------- |
-| Language / Framework | Java 21 / Spring Boot 4       |
+| Language / Framework | Java 21 / Spring Boot 4.0    |
 | ORM                  | JPA, Hibernate                |
 | 통신                 | WebClient, WebSocket, SSE     |
+| 알림 채널            | FCM, 이메일, SMS, 카카오 알림톡 |
 | Database             | PostgreSQL, Redis             |
 | 인프라               | Docker, Nginx, GitHub Actions |
 
-### 4.3 AI Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAi-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAi)
+### 4.3 AI Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAiServer-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer)
 
 | 분류                 | 기술                  |
 | -------------------- | --------------------- |
 | Language / Framework | Python / FastAPI      |
 | 감지 모델            | YOLO (화재·흉기·낙상) |
-| 의료 챗봇            | MedGemma, GPT         |
-| 감정 분석            | HSEmotion             |
-| AI 말벗              | EXAONE                |
+| 의료 챗봇            | MedGemma (응급 답변), Claude (라우터·예약 추출) |
+| 병원 예약 서비스     | NestJS                |
+| 인지훈련 게임        | FastAPI + SQLAlchemy  |
 | 인프라               | Docker, PyTorch       |
 
-## 5. 개발 현황 (1학기 기말 기준)
+> 감정 분석(HSEmotion)·AI 말벗(EXAONE)은 2학기 개발 예정입니다.
 
-| 기능                                         | 상태          |
-| -------------------------------------------- | ------------- |
-| 인증 시스템 (이메일·카카오 로그인, JWT)      | ✅ 완료       |
-| AI 이상감지 (화재·흉기 탐지, WebSocket 연동) | 🔄 진행 중    |
-| AI 의료 챗봇 (MedGemma + GPT 모드 분기)      | 🔄 진행 중    |
-| 보호자 알림 (웹 푸시·이메일·SMS)             | 🔄 진행 중    |
-| 카카오 알림톡 연동                           | 🔄 진행 중    |
-| 낙상 감지 모델 학습                          | 📌 2학기 예정 |
-| AI 감정 분석 / AI 말벗                       | 📌 2학기 예정 |
-| 치매 예방 인지훈련 게임                      | 📌 2학기 예정 |
-| 통합 테스트 / 배포                           | 📌 2학기 예정 |
+## 5. 개발 현황
+
+| 기능                                                   | 상태          |
+| ------------------------------------------------------ | ------------- |
+| 인증 시스템 (이메일·카카오 로그인, JWT)                | ✅ 완료       |
+| 보호자-피보호자 연결, 대시보드, 공지·문의, SOS         | ✅ 완료       |
+| AI 이상감지 (화재·흉기·낙상, WebSocket 연동)           | ✅ 구현       |
+| AI 의료 챗봇 (MedGemma + Claude 라우터, 병원 예약)     | ✅ 구현       |
+| 복약 관리                                              | ✅ 구현       |
+| 알림 (웹 푸시·이메일·SMS)                              | ✅ 구현       |
+| 카카오 알림톡 연동                                     | 🔄 진행 중    |
+| 치매 예방 인지훈련 게임                                | ✅ 구현       |
+| AI 감정 분석 / AI 말벗                                 | 📌 개발 예정  |
+| 통합 테스트 / 운영 배포                                | 🔄 진행 중    |
 
 ## 6. 팀 구성
 
@@ -181,9 +216,9 @@ AI 정서 분석 (HSEmotion)  → 표정·텍스트 분석 → 이상 심리 조
 | --- | --- |
 | [SilverBridgeFe](https://github.com/Dongyang-Mirae-University-software/SilverBridgeFe) | Next.js 프론트엔드 |
 | [SilverBridgeBe](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe) | Spring Boot 백엔드 |
-| [SilverBridgeAi](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAi) | AI 서버 (이상감지·챗봇) |
+| [SilverBridgeAi](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAi) | AI 서버 (초기 버전) |
 | [AiSilverBridgeSky](https://github.com/Dongyang-Mirae-University-software/AiSilverBridgeSky) | YOLO 이상감지 모델 학습·추론 서비스 |
 | [ChatSilverBridge](https://github.com/Dongyang-Mirae-University-software/ChatSilverBridge) | MedGemma 의료 챗봇 서버 |
-| [SilverBridgeReservation](https://github.com/Dongyang-Mirae-University-software/SilverBridgeReservation) | 병원 예약 서비스 |
-| [SilverBridgeAiServer](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer) | AI 추론 서버 |
+| [SilverBridgeReservation](https://github.com/Dongyang-Mirae-University-software/SilverBridgeReservation) | 병원 예약 서비스 (NestJS) |
+| [SilverBridgeAiServer](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer) | AI 서버 (이상감지·의료 챗봇·인지훈련 게임) |
 | [SilverBridgeQA](https://github.com/Dongyang-Mirae-University-software/SilverBridgeQA) | 실제 화면 E2E QA 자동화 (Playwright) |

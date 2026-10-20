@@ -1,8 +1,8 @@
 # 🌉 SilverBridge의 CareAI
 
-**AI 기반 독거노인 통합 케어 플랫폼** — 위험 감지 → 의료 상담 → 병원 예약까지 하나의 흐름으로 연결합니다.
+**AI 기반 독거노인 통합 케어 플랫폼** — 안전, 건강, 마음까지 한 번에 챙기는 돌봄 서비스
 
-![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.0-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 [![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM) [![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf)
 
@@ -10,99 +10,162 @@
 
 ## 1. 프로젝트 소개
 
-CareAI는 독거노인 및 취약계층을 대상으로 설계된 **의료 AI 통합 서비스**입니다.
+CareAI는 독거노인을 위한 **AI 기반 통합 케어 플랫폼**입니다. 실시간 영상 AI가 위험을 감지하고, AI 의료 챗봇이 상담부터 병원 예약까지 돕고, AI 말벗이 일상의 외로움을 덜어 줍니다.
 
-> **2050년, 대한민국 인구의 40%는 65세 이상 시니어입니다.**
-> 1인 가구 노인의 치매 유병률은 **52.6%** 로 전체 가구 형태 중 가장 높고,
-> 고독사의 **90.6%** 는 집 안에서 발생합니다.
+> **여러분은 부모님의 위험한 순간을 제때 알아차릴 수 있다고 확신하십니까?**
 
-기존 서비스가 '알려주는 것'에 집중했다면, SilverBridge CareAI는 **대처하게 만드는 것**까지 포함합니다.
+### 왜 필요한가
 
-주요 기능은 크게 3가지입니다.
+| 수치 | 내용 |
+| :---: | --- |
+| **40%** | 2050년 시니어 인구 비중 — 대한민국 인구 10명 중 4명, 약 1,900만 명 |
+| **52.6%** | 1인 가구 노인 치매 유병률 — 전체 가구 형태 중 가장 높음 (2인 가구 33.7%) |
+| **90.6%** | 고독사, "집 안"에서 발생 — 매년 증가, 2023년 3,661건으로 신기록 |
 
-| | 핵심 기능 | 내용 |
+출처: KOSIS 국가통계포털 · 보건복지부 고독사 실태조사
+
+### SilverBridge가 약속하는 3가지 가치
+
+**위급한 순간에 즉각, 평소에는 꾸준히, 가족에게는 안심을**
+
+| | 가치 | 내용 |
 | :---: | --- | --- |
-| 🚨 | **위급 상황** | 실시간 영상 AI가 낙상·화재·흉기를 감지하면 자동 신고 및 보호자·관리자에게 즉시 알림 |
-| 🏥 | **병원 예약** | AI 의료 챗봇으로 증상 상담 → 진료과 추천 → 병원 예약까지 원스톱 연결 |
-| 💛 | **정서·인지 케어** | 안부 대화 기반 정서 상태 체크 + 치매 예방 인지훈련 게임으로 지속적 건강 관리 |
+| 01 | **위험 상황 즉각 대응** | 실시간 영상 AI가 낙상·화재·흉기를 감지 |
+| 02 | **지속적인 건강 관리** | AI 의료 챗봇과 인지훈련으로 치매 예방까지 |
+| 03 | **보호자 불안감 심리 안정 지원** | 가족 대시보드와 AI 말벗으로 연결 |
 
 | | |
 |:---:|:---:|
-| ![위급 상황 SOS](./images/Newimages/피보호자-SOS.png)<br/>**위급 상황 SOS** | ![AI 챗봇 병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**AI 챗봇 병원 예약** |
-
-SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을 감지하는 것에서 끝나지 않고 의료 상담과 병원 예약까지 자연스럽게 이어주는 의료 AI 통합 서비스입니다.
+| ![위급 상황 SOS](./images/Newimages/피보호자-SOS.png)<br/>**긴급 SOS** | ![AI 챗봇 병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**AI 챗봇 병원 예약** |
 
 ---
 
 ## 2. 주요 기능
 
-### 2.1 공통 인증
+| | 기능 | 내용 |
+| :---: | --- | --- |
+| 01 | **AI 정서 상태 분석** | 표정·텍스트로 이상 심리 조기 감지 |
+| 02 | **AI 말벗** | 음성 대화로 외로움 해소·정서 케어 |
+| 03 | **치매 예방** | 맞춤형 인지 훈련 게임 제공 |
+| 04 | **AI 실시간 이상 감지** | 화재·흉기·낙상 자동 감지 알림 |
+| 05 | **AI 의료 챗봇** | 의료 궁금증 24시간 즉시 답변 |
+| 06 | **병원 예약** | 병원 검색·간편 예약·복약 알림 |
 
-- 이메일 로그인 / 카카오 소셜 로그인
-- 회원가입 / 비밀번호 찾기·재설정
-- JWT 기반 세션 유지 및 계정 복구
-- 역할별(피보호자·보호자) 화면 분기
+### 2.1 AI 이상 감지 · 알림 · SOS
+
+**위험은 AI가 먼저 보고, 가족은 바로 압니다.**
+
+- **AI가 먼저 봅니다** — 화재·낙상·흉기를 24시간 실시간으로 감지 (WebSocket 이벤트 기반 실시간 영상 분석)
+- **가족 모두가, 같은 순간에** — 보호자 전원과 어르신 본인에게 동시에 알림
+- **놀라지 않게, 놓치지 않게** — 이어지는 감지는 하나로 묶어 알림 폭탄 없이 전달
+- **답할수록 더 정확해집니다** — "진짜 위험이었나요?" 보호자의 답이 AI를 키웁니다
+
+| 감지 항목 | 화재 | 낙상 | 흉기 |
+| --- | :---: | :---: | :---: |
+| AI가 위험을 알아맞힌 비율 | 83.3% | 92.6% | 89.8% |
+
+**긴급 SOS — 버튼 하나면 충분합니다. 나머지는 CareAI가 합니다.**
+
+1. 기록부터 남깁니다 (알림이 실패해도 남아요)
+2. 모든 보호자에게 즉시 위치와 함께 앱 푸시
+3. 안 닿으면 문자로 다시 (SOS만의 이중 안전장치)
+4. 119까지 한 번에, 화면에서 바로 연결 안내
+
+보호자가 알림을 꺼 두었어도 SOS는 반드시 도착합니다.
+
+| | |
+|:---:|:---:|
+| ![SOS](./images/Newimages/피보호자-SOS.png)<br/>**피보호자 · SOS 호출** | ![SOS 수신](./images/Newimages/보호자웹-SOS.png)<br/>**보호자 · SOS 수신** |
+| ![이상감지 메인](./images/Newimages/보호자웹-이상감지_메인.png)<br/>**보호자 · 이상 감지 목록** | ![이상감지 모달](./images/Newimages/보호자웹-이상감지_모달.png)<br/>**보호자 · 이상 감지 영상 확인** |
+
+### 2.2 AI 의료 챗봇 · 병원 예약
+
+**아플 때, 묻는 순간 답이 옵니다.** 화면에서 모드를 고르면, 알맞은 AI가 답해요.
+
+| 모드 | 모델 | 역할 |
+| --- | :---: | --- |
+| 🚨 응급 증상 | MedGemma | 증상을 살펴 건강을 안내 |
+| 📅 병원 예약 | GPT | 병원 예약 대화를 수행 |
+| 💬 일반 문의 | GPT | 이런저런 질문에 답변 |
+
+```text
+증상 말하기 → AI가 정리 → 병원 찾기 → 바로 예약
+```
+
+예약은 가족이 대신 해도 됩니다. AI 상담은 의료진의 진단을 대신하지 않습니다.
+
+| | |
+|:---:|:---:|
+| ![AI 챗봇](./images/Newimages/보호자웹-AI챗봇.png)<br/>**AI 의료 챗봇** | ![병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**병원 검색 · 예약** |
+| ![예약 현황](./images/Newimages/피보호자-병원예약%20현황.png)<br/>**예약 현황** | |
+
+### 2.3 복약 알림 · 치매 예방
+
+**약 한 알, 게임 한 판. 매일이 쌓여 건강이 됩니다.**
+
+- 복약 알림 · 진료 일정 자동 관리
+- 치매 예방 두뇌 게임 — 카드 짝 맞추기 · 빈칸 채우기 · 더하기 · 빼기
+- 어르신은 체크만, 복약과 게임 기록은 보호자 화면에 자동으로 쌓입니다.
+
+| | |
+|:---:|:---:|
+| ![복약](./images/Newimages/피보호자-복약.png)<br/>**피보호자 · 복약** | ![복약 관리](./images/Newimages/보호자웹-복약관리.png)<br/>**보호자 · 복약 관리** |
+| ![인지훈련 게임](./images/Newimages/피보호자-게임.png)<br/>**치매 예방 게임** | |
+
+### 2.4 AI 말벗 · 정서 분석 🔄 개발 중
+
+**하루 다섯 번, 먼저 안부를 묻습니다.** 기다리지 않고 AI 말벗이 먼저 말을 건넵니다.
+
+| 시간 | 안부 |
+| :---: | --- |
+| 9시 | 아침 식사는 하셨어요? |
+| 12시 | 점심은 맛있게 드셨어요? |
+| 15시 | 오늘 기분이 어떠세요? |
+| 18시 | 요즘 즐거운 일이 있나요? |
+| 21시 | 오늘 하루는 어떠셨어요? |
+
+**대답 한마디로 오늘의 마음을 읽습니다.** 말투와 표정에서 오늘의 마음(평온·기쁨 등)을 분석하고, 평소와 다른 변화는 보호자에게 바로 알려 드립니다.
+
+| | |
+|:---:|:---:|
+| ![정서 상태 체크](./images/Newimages/보호자웹-정서상태체크.png)<br/>**보호자 · 정서 상태 체크** | |
+
+### 2.5 로그인 · 인증
+
+**시니어도 보호자도 막힘없이 시작**
+
+- **이메일 · 카카오 소셜 로그인** — 간편 로그인으로 진입 장벽 최소화
+- **사용자 · 보호자 역할 분리** — 역할별 권한과 화면을 분기 제공
+- **로그인 유지 · 계정 찾기** — JWT 기반 세션 유지 및 복구 지원
 
 | | |
 |:---:|:---:|
 | ![회원가입](./images/signup.png)<br/>**회원가입** | ![로그인](./images/login.png)<br/>**로그인** |
 
-### 2.2 피보호자 화면
+### 2.6 보호자 알림 및 외부 서비스 연동
 
-- 카메라 실시간 영상 송출
-- 위급 상황 SOS 호출
-- 내 보호자 목록 조회 / 연결 요청 수락·거절·해제
-- AI 의료 챗봇, 병원 검색·예약
-- 복약 관리
-- 치매 예방 인지훈련 게임
-- 공지사항, 환경설정
+**하나의 알림을 여러 채널로 보호자에게 동시에 전달**
 
-| | |
-|:---:|:---:|
-| ![메인 화면](./images/Newimages/피보호자-메인화면.png)<br/>**메인 화면** | ![카메라 송출](./images/Newimages/피보호자-카메라%20송출.png)<br/>**카메라 송출** |
-| ![카메라 송출 중](./images/Newimages/피보호자-카메라%20송출2.png)<br/>**카메라 송출 중** | ![SOS](./images/Newimages/피보호자-SOS.png)<br/>**SOS 호출** |
-| ![내 보호자](./images/Newimages/피보호자-내보호자.png)<br/>**내 보호자** | ![AI 챗봇](./images/Newimages/보호자웹-AI챗봇.png)<br/>**AI 의료 챗봇** |
-| ![병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**병원 예약** | ![예약 현황](./images/Newimages/피보호자-병원예약%20현황.png)<br/>**예약 현황** |
-| ![복약](./images/Newimages/피보호자-복약.png)<br/>**복약 관리** | ![인지훈련 게임](./images/Newimages/피보호자-게임.png)<br/>**인지훈련 게임** |
+| 채널 | 내용 |
+| --- | --- |
+| 웹 푸시 (앱 푸시) | 보호자 연결 요청 등을 실시간 알림, SOS는 항상 발송 |
+| 문자 (SMS) | 인증번호 발송, 알림에도 사용 |
+| 이메일 | 이상 감지 알림 발송 |
+| 카카오 알림톡 | 선택 채널 |
 
-### 2.3 보호자 화면
-
-- 보호자 홈 대시보드 (피보호자 상태 실시간 확인)
-- 피보호자 목록 조회 / 등록 요청 / 요청 내역 / 연결 해제
-- AI 이상감지 이력 조회 (화재·흉기·낙상) 및 이상 발생 시 영상 확인
-- SOS 수신 이력
-- AI 의료 챗봇 (응급 증상·병원 예약·일반 문의 모드 자동 분기)
-- 병원 검색·예약
-- 복약 관리
-- 정서 상태 체크 (하루 5회 안부 대화 기록·감정 상태 확인)
+알림 설정에서 사용자가 유형별 알림 방법을 직접 선택할 수 있습니다.
 
 | | |
 |:---:|:---:|
-| ![대시보드](./images/Newimages/보호자웹-대시보드.png)<br/>**대시보드** | ![이상감지 메인](./images/Newimages/보호자웹-이상감지_메인.png)<br/>**이상감지 이력** |
-| ![이상감지 모달](./images/Newimages/보호자웹-이상감지_모달.png)<br/>**이상 발생 영상 확인** | ![AI 챗봇](./images/Newimages/보호자웹-AI챗봇.png)<br/>**AI 의료 챗봇** |
-| ![보호자 연결](./images/Newimages/보호자웹-보호자_연결.png)<br/>**피보호자 연결** | ![병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**병원 예약** |
-| ![복약 관리](./images/Newimages/보호자웹-복약관리.png)<br/>**복약 관리** | ![SOS](./images/Newimages/보호자웹-SOS.png)<br/>**SOS 수신 이력** |
-| ![정서 상태 체크](./images/Newimages/보호자웹-정서상태체크.png)<br/>**정서 상태 체크** | |
+| ![알림 환경설정](./images/Newimages/보호자웹-환경설정.png)<br/>**알림 환경설정** | ![대시보드](./images/Newimages/보호자웹-대시보드.png)<br/>**보호자 · 대시보드** |
 
-### 2.4 알림
-
-- 웹 푸시 알림
-- 이메일 / SMS 알림
-- 카카오 알림톡
-- 알림 유형별 설정 화면
+### 2.7 보호자 · 피보호자 화면
 
 | | |
 |:---:|:---:|
-| ![알림 환경설정](./images/Newimages/보호자웹-환경설정.png)<br/>**알림 환경설정** | |
-
-### 2.5 공통
-
-- 마이페이지
-- 공지사항 조회 / 1:1 문의
-
-| | |
-|:---:|:---:|
-| ![공지사항](./images/Newimages/보호자웹-공지.png)<br/>**공지사항** | |
+| ![메인 화면](./images/Newimages/피보호자-메인화면.png)<br/>**피보호자 · 메인 화면** | ![카메라 송출](./images/Newimages/피보호자-카메라%20송출.png)<br/>**피보호자 · 카메라 송출** |
+| ![카메라 송출 중](./images/Newimages/피보호자-카메라%20송출2.png)<br/>**피보호자 · 카메라 송출 중** | ![내 보호자](./images/Newimages/피보호자-내보호자.png)<br/>**피보호자 · 내 보호자** |
+| ![보호자 연결](./images/Newimages/보호자웹-보호자_연결.png)<br/>**보호자 · 피보호자 연결** | ![공지사항](./images/Newimages/보호자웹-공지.png)<br/>**공지사항** |
 
 ---
 
@@ -117,110 +180,83 @@ flowchart LR
     BE --- DB[("PostgreSQL<br/>Redis")]
     BE <-->|이상감지·챗봇·게임| AI["AI Server<br/>FastAPI"]
     AI --> YOLO["YOLO<br/>화재·흉기·낙상"]
-    AI --> LLM["MedGemma · Claude<br/>의료 챗봇"]
+    AI --> LLM["MedGemma · GPT<br/>의료 챗봇"]
     AI -->|병원 예약| RS["예약 서비스<br/>NestJS"]
     BE -->|이상·SOS 알림| N["웹 푸시 · 이메일<br/>SMS · 알림톡"]
     N --> G
 ```
 
-### 서비스 흐름
+### 작품 사용 사례
 
-**🚨 긴급 상황**
+**🚨 긴급 상황 — 자동 신고 및 보호자 연락**
 
-```
-카메라 → AI 분석 (낙상·화재·흉기, YOLO 모델) → 위험 판단
-  → 보호자·관리자 즉시 알림 (웹 푸시·이메일·SMS·카카오 알림톡)
-SOS 버튼 → 보호자 즉시 알림
+```text
+카메라가 위험 상황 감지 → AI가 낙상·화재·흉기 분석 → 자동 신고 시스템 작동 → 보호자에게 즉시 연락
 ```
 
-**🏥 평소 상황**
+**🏥 의료 상담 · 예약 — 채팅 기반 증상 상담 및 병원 예약**
 
-```
-AI 의료 챗봇 → 증상 채팅 입력 → Claude 라우터가 모드 자동 분기
-  ├─ 응급 증상  → 응급 키워드 강제 감지 + MedGemma 의료 LLM 답변
-  ├─ 병원 예약  → Claude 기반 예약 대화 → 병원 검색 → 예약 연결
-  └─ 일반 문의  → 일반 안내 답변
-```
-
-**💛 정서·인지 케어**
-
-```
-치매 예방 인지훈련 게임    → 기억력·집중력 훈련 (구현)
-정서 상태 체크 (안부 대화) → 하루 5회 안부 → 보호자 화면에서 감정 상태 확인 (화면 구현)
-AI 말벗 (EXAONE)          → 음성 대화 → 외로움 해소·정서 케어 (개발 중)
-AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 조기 감지 (개발 중)
+```text
+증상·궁금증을 채팅으로 입력 → AI가 증상 정리·정보 제공 → 진료과 추천 및 병원 검색 → 필요 시 병원 예약 연결
 ```
 
 ---
 
 ## 4. 기술 스택
 
-### 4.1 Frontend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeFe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeFe)
-
-| 분류 | 기술 |
-| --- | --- |
-| Framework | Next.js 16 (SSR + CSR 혼합 구조) |
-| Language | TypeScript |
-| UI | React 19, CSS Modules |
-| 서버 통신 | Axios, TanStack React Query |
-| 알림 | FCM (웹 푸시) |
-| 인프라 | Docker, Nginx (reverse proxy) |
-
-### 4.2 Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeBe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe)
-
-| 분류 | 기술 |
-| --- | --- |
-| Language / Framework | Java 21 / Spring Boot 4.0 |
-| ORM | JPA, Hibernate |
-| 통신 | WebClient, WebSocket, SSE |
-| 알림 채널 | FCM, 이메일, SMS, 카카오 알림톡 |
-| Database | PostgreSQL, Redis |
-| 인프라 | Docker, Nginx, GitHub Actions |
-
-### 4.3 AI Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAiServer-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer)
-
-| 분류 | 기술 |
-| --- | --- |
-| Language / Framework | Python / FastAPI |
-| 감지 모델 | YOLO (화재·흉기·낙상) |
-| 의료 챗봇 | MedGemma (응급 답변), Claude (라우터·예약 추출) |
-| 병원 예약 서비스 | NestJS |
-| 인지훈련 게임 | FastAPI + SQLAlchemy |
-| 인프라 | Docker, PyTorch |
-
-> 정서 분석(HSEmotion)·AI 말벗(EXAONE)은 현재 개발 중입니다.
+| 분류 | 기술 | 저장소 |
+| --- | --- | --- |
+| **Frontend** | Next.js, React, TypeScript, Node.js | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeFe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeFe) |
+| **Backend** | Java 21, Spring Boot 4, JPA/Hibernate | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeBe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe) |
+| **AI** | Python, FastAPI, PyTorch/YOLO, OpenCV, MedGemma, GPT, EXAONE, HSEmotion | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAiServer-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer) |
+| **Database** | PostgreSQL, Redis, MariaDB | |
+| **DevOps** | Ubuntu, Docker, Nginx, GitHub, GitHub Actions, Postman | |
 
 ---
 
-## 5. 개발 현황
+## 5. AI 구조 및 최적화
+
+| 모델 | 용도 |
+| --- | --- |
+| **YOLO** | 화재 · 흉기 · 낙상 감지 |
+| **MedGemma** | 응급 증상 의료 LLM |
+| **GPT** | 병원 예약 · 일반 문의 챗봇 |
+| **EXAONE** | AI 말벗 (개발 중) |
+| **HSEmotion** | 표정·텍스트 정서 분석 (개발 중) |
+
+- **흉기 감지** — 처음엔 인식률이 낮았지만 데이터셋을 재구성해 다시 학습하니 크게 좋아졌습니다. 학습 사진 1,594장 → 2,805장으로 확충해 4차 학습 모델을 최종 채택했고, 실시간 영상을 14.5 fps로 처리합니다.
+- **화재 감지** — 불빛·노을 등을 불로 착각하는 오감지가 잦아, 오감지 사진을 걸러 데이터셋을 재구성해 재학습했습니다.
+
+---
+
+## 6. 개발 현황
 
 **2학기 중간 발표 기준 — 정서 체크를 제외한 모든 기능 구현 완료**
 
 | 기능 | 상태 |
 | --- | :---: |
-| 인증 시스템 (이메일·카카오 로그인, JWT) | ✅ 완료 |
-| 보호자-피보호자 연결, 대시보드, 공지·문의, SOS | ✅ 완료 |
-| AI 이상감지 (화재·흉기·낙상, WebSocket 연동) | ✅ 완료 |
-| AI 의료 챗봇 (MedGemma + Claude 라우터, 병원 예약) | ✅ 완료 |
-| 복약 관리 | ✅ 완료 |
-| 알림 (웹 푸시·이메일·SMS·카카오 알림톡) | ✅ 완료 |
-| 치매 예방 인지훈련 게임 | ✅ 완료 |
-| 통합 테스트 / 운영 배포 | ✅ 완료 |
-| 정서 체크 (AI 정서 분석 · AI 말벗) | 🔄 개발 중 |
+| 기획 / UI·UX 설계 / 인프라 | ✅ 완료 |
+| 인증 시스템 | ✅ 완료 |
+| AI 이상 감지 (화재·흉기·낙상) | ✅ 완료 |
+| AI 의료 챗봇 | ✅ 완료 |
+| 병원 예약 시스템 | ✅ 완료 |
+| 관리자 / 사용자 인터페이스 | ✅ 완료 |
+| 보호자 알림 및 외부 서비스 연동 | ✅ 완료 |
+| 치매 예방 게임 | ✅ 완료 |
+| 통합 테스트 / 배포 | ✅ 완료 |
+| AI 감정 분석 · AI 말벗 (정서 체크) | 🔄 개발 중 |
 
-### AI 모델 개선
+### 제약사항 및 개선 방향
 
-- **흉기 감지**: 초기 인식률이 낮아 데이터셋을 재구성해 재학습하고 성능을 개선했습니다.
-- **화재 감지**: 테스트에서 오감지가 많아 데이터셋을 재구성해 재학습했습니다.
-
-### 한계 및 향후 계획
-
-- 앉기·눕기 등 유사 행동과 구분이 어려워 오탐·미탐이 발생할 수 있으며, 데이터 보강으로 개선 중입니다.
-- 정서 체크(AI 말벗 EXAONE, 표정·텍스트 분석 HSEmotion) 완성 후 보호자 화면과 연동할 예정입니다.
+| 제약사항 | 개선 방향 |
+| --- | --- |
+| **AI 감지 정확도 한계** — 유사 행동(앉기, 눕기 등)과 구분이 어려워 오탐·미탐 발생 가능 | 낙상·일상행동 등 다양한 데이터 학습 및 데이터 증강을 통해 오탐·미탐 감소 |
+| **카메라 시야 제약** — 카메라 위치 및 각도에 따라 일부 행동이 인식되지 않는 사각지대 발생 | 360도 카메라 및 다각도 촬영으로 사각지대 최소화 |
+| **고령층 사용성 문제** — 복잡한 UI로 인해 고령층이 기능 사용에 어려움 발생 | SOS 버튼 및 보호자 호출 기능 중심의 단순하고 직관적인 UI 제공 |
 
 ---
 
-## 6. 팀 구성
+## 7. 팀 구성
 
 | 이름 | 역할 |
 | --- | --- |
@@ -231,9 +267,9 @@ AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 �
 
 ---
 
-## 7. 시연 영상 / 발표 자료
+## 8. 시연 영상 / 발표 자료
 
-### 7.1 시연 영상
+### 8.1 시연 영상
 
 - **YouTube 시연 영상**
 
@@ -245,7 +281,7 @@ AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 �
   | --- | --- |
   | [▶ 흉기감지_테스트.mp4](videos/흉기감지_테스트.mp4) | [▶ 낙상감지_테스트.mp4](videos/낙상감지_테스트.mp4) |
 
-### 7.2 발표 자료 / 문서
+### 8.2 발표 자료 / 문서
 
 | 구분 | 파일 |
 | --- | --- |
@@ -256,7 +292,7 @@ AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 �
 
 ---
 
-## 8. 저장소 목록
+## 9. 저장소 목록
 
 | 저장소 | 설명 |
 | --- | --- |

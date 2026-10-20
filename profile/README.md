@@ -4,7 +4,7 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-[![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM) [![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf)
+[![Service](https://img.shields.io/badge/체험하기-devdmu.gosky.kr-B7472A?style=for-the-badge)](https://devdmu.gosky.kr) [![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM) [![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf)
 
 ---
 
@@ -36,7 +36,7 @@ CareAI는 독거노인을 위한 **AI 기반 통합 케어 플랫폼**입니다.
 
 | | |
 |:---:|:---:|
-| ![위급 상황 SOS](./images/Newimages/피보호자-SOS.png)<br/>**긴급 SOS** | ![AI 챗봇 병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**AI 챗봇 병원 예약** |
+| ![SOS](./images/Newimages/피보호자-SOS.png)<br/>**긴급 SOS** | ![AI 챗봇 병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**AI 챗봇 병원 예약** |
 
 ---
 
@@ -51,32 +51,23 @@ CareAI는 독거노인을 위한 **AI 기반 통합 케어 플랫폼**입니다.
 | 05 | **AI 의료 챗봇** | 의료 궁금증 24시간 즉시 답변 |
 | 06 | **병원 예약** | 병원 검색·간편 예약·복약 알림 |
 
+---
+
 ### 2.1 AI 이상 감지 · 알림 · SOS
 
 **위험은 AI가 먼저 보고, 가족은 바로 압니다.**
 
-- **AI가 먼저 봅니다** — 화재·낙상·흉기를 24시간 실시간으로 감지 (WebSocket 이벤트 기반 실시간 영상 분석)
-- **가족 모두가, 같은 순간에** — 보호자 전원과 어르신 본인에게 동시에 알림
-- **놀라지 않게, 놓치지 않게** — 이어지는 감지는 하나로 묶어 알림 폭탄 없이 전달
-- **답할수록 더 정확해집니다** — "진짜 위험이었나요?" 보호자의 답이 AI를 키웁니다
+- 🔔 **이상감지 알림** — 화재·낙상·흉기를 24시간 실시간으로 감지해 보호자 전원과 어르신에게 동시에 알립니다.
+- 🆘 **위급상황 SOS** — 버튼 하나로 위치와 함께 앱 푸시를 보내고, 안 닿으면 문자, 이어서 119 연결을 안내합니다.
 
-| 감지 항목 | 화재 | 낙상 | 흉기 |
-| --- | :---: | :---: | :---: |
-| AI가 위험을 알아맞힌 비율 | 83.3% | 92.6% | 89.8% |
-
-**긴급 SOS — 버튼 하나면 충분합니다. 나머지는 CareAI가 합니다.**
-
-1. 기록부터 남깁니다 (알림이 실패해도 남아요)
-2. 모든 보호자에게 즉시 위치와 함께 앱 푸시
-3. 안 닿으면 문자로 다시 (SOS만의 이중 안전장치)
-4. 119까지 한 번에, 화면에서 바로 연결 안내
-
-보호자가 알림을 꺼 두었어도 SOS는 반드시 도착합니다.
+> AI가 위험을 알아맞힌 비율: 화재 **83.3%** · 낙상 **92.6%** · 흉기 **89.8%**
 
 | | |
 |:---:|:---:|
 | ![SOS](./images/Newimages/피보호자-SOS.png)<br/>**피보호자 · SOS 호출** | ![SOS 수신](./images/Newimages/보호자웹-SOS.png)<br/>**보호자 · SOS 수신** |
 | ![이상감지 메인](./images/Newimages/보호자웹-이상감지_메인.png)<br/>**보호자 · 이상 감지 목록** | ![이상감지 모달](./images/Newimages/보호자웹-이상감지_모달.png)<br/>**보호자 · 이상 감지 영상 확인** |
+
+---
 
 ### 2.2 AI 의료 챗봇 · 병원 예약
 
@@ -99,6 +90,8 @@ CareAI는 독거노인을 위한 **AI 기반 통합 케어 플랫폼**입니다.
 | ![AI 챗봇](./images/Newimages/보호자웹-AI챗봇.png)<br/>**AI 의료 챗봇** | ![병원 예약](./images/Newimages/보호자웹-병원예약.png)<br/>**병원 검색 · 예약** |
 | ![예약 현황](./images/Newimages/피보호자-병원예약%20현황.png)<br/>**예약 현황** | |
 
+---
+
 ### 2.3 복약 알림 · 치매 예방
 
 **약 한 알, 게임 한 판. 매일이 쌓여 건강이 됩니다.**
@@ -111,6 +104,8 @@ CareAI는 독거노인을 위한 **AI 기반 통합 케어 플랫폼**입니다.
 |:---:|:---:|
 | ![복약](./images/Newimages/피보호자-복약.png)<br/>**피보호자 · 복약** | ![복약 관리](./images/Newimages/보호자웹-복약관리.png)<br/>**보호자 · 복약 관리** |
 | ![인지훈련 게임](./images/Newimages/피보호자-게임.png)<br/>**치매 예방 게임** | |
+
+---
 
 ### 2.4 AI 말벗 · 정서 분석 🔄 개발 중
 
@@ -130,6 +125,8 @@ CareAI는 독거노인을 위한 **AI 기반 통합 케어 플랫폼**입니다.
 |:---:|:---:|
 | ![정서 상태 체크](./images/Newimages/보호자웹-정서상태체크.png)<br/>**보호자 · 정서 상태 체크** | |
 
+---
+
 ### 2.5 로그인 · 인증
 
 **시니어도 보호자도 막힘없이 시작**
@@ -142,22 +139,26 @@ CareAI는 독거노인을 위한 **AI 기반 통합 케어 플랫폼**입니다.
 |:---:|:---:|
 | ![회원가입](./images/signup.png)<br/>**회원가입** | ![로그인](./images/login.png)<br/>**로그인** |
 
+---
+
 ### 2.6 보호자 알림 및 외부 서비스 연동
 
 **하나의 알림을 여러 채널로 보호자에게 동시에 전달**
 
 | 채널 | 내용 |
 | --- | --- |
-| 웹 푸시 (앱 푸시) | 보호자 연결 요청 등을 실시간 알림, SOS는 항상 발송 |
-| 문자 (SMS) | 인증번호 발송, 알림에도 사용 |
-| 이메일 | 이상 감지 알림 발송 |
-| 카카오 알림톡 | 선택 채널 |
+| 웹 푸시 (앱 푸시) | 항상 발송 — 보호자 연결 요청을 실시간 알림 |
+| 문자 (SMS) | 선택 — 인증번호 발송, 알림에도 사용 |
+| 이메일 | 발송 연동 완료 |
+| 카카오 알림톡 | 선택 |
 
 알림 설정에서 사용자가 유형별 알림 방법을 직접 선택할 수 있습니다.
 
 | | |
 |:---:|:---:|
 | ![알림 환경설정](./images/Newimages/보호자웹-환경설정.png)<br/>**알림 환경설정** | ![대시보드](./images/Newimages/보호자웹-대시보드.png)<br/>**보호자 · 대시보드** |
+
+---
 
 ### 2.7 보호자 · 피보호자 화면
 
@@ -188,10 +189,10 @@ flowchart LR
 
 ### 작품 사용 사례
 
-**🚨 긴급 상황 — 자동 신고 및 보호자 연락**
+**🚨 위험 상황 — 이상 감지 및 보호자 알림**
 
 ```text
-카메라가 위험 상황 감지 → AI가 낙상·화재·흉기 분석 → 자동 신고 시스템 작동 → 보호자에게 즉시 연락
+카메라가 위험 상황 감지 → AI가 낙상·화재·흉기 분석 → 보호자 전원과 어르신에게 동시에 알림 → 보호자의 확인 답변으로 AI 정확도 개선
 ```
 
 **🏥 의료 상담 · 예약 — 채팅 기반 증상 상담 및 병원 예약**
@@ -206,11 +207,11 @@ flowchart LR
 
 | 분류 | 기술 | 저장소 |
 | --- | --- | --- |
-| **Frontend** | Next.js, React, TypeScript, Node.js | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeFe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeFe) |
-| **Backend** | Java 21, Spring Boot 4, JPA/Hibernate | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeBe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe) |
-| **AI** | Python, FastAPI, PyTorch/YOLO, OpenCV, MedGemma, GPT, EXAONE, HSEmotion | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAiServer-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer) |
-| **Database** | PostgreSQL, Redis, MariaDB | |
-| **DevOps** | Ubuntu, Docker, Nginx, GitHub, GitHub Actions, Postman | |
+| **Frontend** | Next.js, React, TypeScript | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeFe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeFe) |
+| **Backend** | Java 21, Spring Boot, JPA/Hibernate | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeBe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe) |
+| **AI** | Python, FastAPI, PyTorch, YOLO, OpenCV, MedGemma, GPT, EXAONE, HSEmotion | [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAiServer-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer) |
+| **Database** | PostgreSQL, Redis | |
+| **DevOps** | Docker, Nginx, GitHub Actions | |
 
 ---
 
@@ -240,7 +241,7 @@ flowchart LR
 | AI 이상 감지 (화재·흉기·낙상) | ✅ 완료 |
 | AI 의료 챗봇 | ✅ 완료 |
 | 병원 예약 시스템 | ✅ 완료 |
-| 관리자 / 사용자 인터페이스 | ✅ 완료 |
+| 사용자 인터페이스 | ✅ 완료 |
 | 보호자 알림 및 외부 서비스 연동 | ✅ 완료 |
 | 치매 예방 게임 | ✅ 완료 |
 | 통합 테스트 / 배포 | ✅ 완료 |
@@ -258,12 +259,14 @@ flowchart LR
 
 ## 7. 팀 구성
 
+동양미래대학교 · 지도교수 **이희진** 교수님
+
 | 이름 | 역할 |
 | --- | --- |
-| 이하늘 | **팀장 / AI / Infra** - 병원 예약 시스템, 인프라 아키텍처, AI 챗봇, 치매 예방 게임 |
-| 남궁명진 | **Backend** - DB 설계, REST API, 인증/인가, 외부 서비스·AI 서버 연동, 품질/보안 관리 |
-| 이윤아 | **Frontend** - Next.js/React 컴포넌트, UI/UX 설계, 반응형 레이아웃, 백엔드 API 연동 |
-| 이재희 | **AI** - 정서 분석·이상감지·말벗 AI 개발 및 모델 학습 |
+| 이하늘 | **팀장** · PM · 인프라 |
+| 남궁명진 | **백엔드** |
+| 이재희 | **AI 엔지니어** |
+| 이윤아 | **프론트엔드** |
 
 ---
 
@@ -289,6 +292,7 @@ flowchart LR
 | 1학기 중간발표 (프로젝트 제안서) | [![PPT](https://img.shields.io/badge/중간발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_중간발표.pptx) |
 | 1학기 최종발표 | [![PPT](https://img.shields.io/badge/최종발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_최종발표.pptx) |
 | 2학기 프로젝트 계획서 | [![PPT](https://img.shields.io/badge/2학기_계획서-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_2학기_프로젝트계획서.pptx) |
+| 2학기 중간평가 | [![PPT](https://img.shields.io/badge/2학기_중간평가-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_2학기_중간평가.pptx) |
 
 ---
 

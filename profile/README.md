@@ -1,28 +1,61 @@
-# SilverBridge의 CareAI
+<h1 align="center">🌉 SilverBridge · CareAI</h1>
+
+<p align="center">
+  <b>AI 기반 독거노인 통합 케어 플랫폼</b><br/>
+  위험 감지 → 의료 상담 → 병원 예약까지, 하나의 흐름으로 연결합니다.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/Spring_Boot-4.0-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+</p>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=y4lUm_REdXM"><img src="https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
+  <a href="docs/실버브릿지_브로셔.pdf"><img src="https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="브로셔"/></a>
+</p>
+
+<p align="center">
+  <a href="#1-프로젝트-소개">소개</a> ·
+  <a href="#2-주요-기능">주요 기능</a> ·
+  <a href="#3-서비스-아키텍처--흐름">아키텍처</a> ·
+  <a href="#4-기술-스택">기술 스택</a> ·
+  <a href="#5-개발-현황">개발 현황</a> ·
+  <a href="#6-팀-구성">팀</a> ·
+  <a href="#7-시연-영상--발표-자료">시연·자료</a> ·
+  <a href="#8-저장소-목록">저장소</a>
+</p>
+
+---
 
 ## 1. 프로젝트 소개
 
-CareAI는 독거노인 및 취약계층을 대상으로 설계된 의료 AI 통합 서비스입니다.
+CareAI는 독거노인 및 취약계층을 위한 **의료 AI 통합 서비스**입니다.
 
-> 2050년, 대한민국 인구의 40%는 65세 이상 시니어입니다.
-> 1인 가구 노인의 치매 유병률은 52.6%로 전체 가구 형태 중 가장 높고,
-> 고독사의 90.6%는 집 안에서 발생합니다.
+> **2050년, 대한민국 인구의 40%는 65세 이상 시니어입니다.**
+> 1인 가구 노인의 치매 유병률은 **52.6%** 로 전체 가구 형태 중 가장 높고,
+> 고독사의 **90.6%** 는 집 안에서 발생합니다.
 
-AI 기반 독거노인 통합 케어 플랫폼 — 위험 감지 → 의료 상담 → 병원 예약까지 하나의 흐름으로 연결합니다. 기존 서비스가 '알려주는 것'에 집중했다면, SilverBridge CareAI는 대처하게 만드는 것까지 포함합니다.
+기존 서비스가 '알려주는 것'에 집중했다면, SilverBridge CareAI는 **대처하게 만드는 것**까지 포함합니다.
 
-주요 기능은 크게 3가지입니다.
+| | 핵심 기능 | 내용 |
+| :---: | --- | --- |
+| 🚨 | **위급 상황 감지** | 실시간 영상 AI가 낙상·화재·흉기를 감지하면 자동 신고 및 보호자·관리자에게 즉시 알림 |
+| 🏥 | **병원 예약** | AI 의료 챗봇으로 증상 상담 → 진료과 추천 → 병원 예약까지 원스톱 연결 |
+| 💛 | **정서·인지 케어** | 안부 대화 기반 정서 상태 체크 + 치매 예방 인지훈련 게임으로 지속적 건강 관리 |
 
-### 1. 위급 상황: 실시간 영상 AI가 낙상·화재·흉기를 감지하면 자동 신고 및 보호자·관리자에게 즉시 알림
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="./images/Newimages/피보호자-SOS.png" alt="피보호자 SOS 화면"/><br/><sub><b>위급 상황 SOS</b></sub></td>
+    <td align="center" width="50%"><img src="./images/Newimages/보호자웹-병원예약.png" alt="보호자 웹 병원 예약 화면"/><br/><sub><b>AI 챗봇 병원 예약</b></sub></td>
+  </tr>
+</table>
 
-![sos](./images/Newimages/피보호자-SOS.png)
-
-### 2. 병원 예약: AI 의료 챗봇으로 증상 상담 → 진료과 추천 → 병원 예약까지 원스톱 연결
-
-![sos](./images/Newimages/보호자웹-병원예약.png)
-
-### 3. 정서·인지 케어: 안부 대화 기반 정서 상태 체크 + 치매 예방 인지훈련 게임으로 지속적 건강 관리
-
-SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을 감지하는 것에서 끝나지 않고 의료 상담과 병원 예약까지 자연스럽게 이어주는 의료 AI 통합 서비스입니다.
+---
 
 ## 2. 주요 기능
 
@@ -32,7 +65,13 @@ SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을
 - 회원가입 / 비밀번호 찾기·재설정
 - JWT 기반 세션 유지 및 계정 복구
 - 역할별(피보호자·보호자) 화면 분기
-  ![sos](./images/signup.png)![sos](./images/login.png)
+
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="./images/signup.png" alt="회원가입 화면"/><br/><sub>회원가입</sub></td>
+    <td align="center" width="50%"><img src="./images/login.png" alt="로그인 화면"/><br/><sub>로그인</sub></td>
+  </tr>
+</table>
 
 ### 2.2 피보호자 화면
 
@@ -43,16 +82,23 @@ SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을
 - 복약 관리
 - 치매 예방 인지훈련 게임
 - 공지사항, 환경설정
-  ![sos](./images/Newimages/피보호자-메인화면.png)
-  ![sos](./images/Newimages/피보호자-카메라%20송출.png)
-  ![sos](./images/Newimages/피보호자-카메라%20송출2.png)
-  ![sos](./images/Newimages/피보호자-SOS.png)
-  ![sos](./images/Newimages/피보호자-내보호자.png)
-  ![sos](./images/Newimages/보호자웹-AI챗봇.png)
-  ![sos](./images/Newimages/보호자웹-병원예약.png)
-  ![sos](./images/Newimages/피보호자-병원예약%20현황.png)
-  ![sos](./images/Newimages/피보호자-복약.png)
-  ![sos](./images/Newimages/피보호자-게임.png)
+
+<table>
+  <tr>
+    <td align="center" width="20%"><img src="./images/Newimages/피보호자-메인화면.png" alt="메인 화면"/><br/><sub>메인 화면</sub></td>
+    <td align="center" width="20%"><img src="./images/Newimages/피보호자-카메라%20송출.png" alt="카메라 송출"/><br/><sub>카메라 송출</sub></td>
+    <td align="center" width="20%"><img src="./images/Newimages/피보호자-카메라%20송출2.png" alt="카메라 송출 중"/><br/><sub>송출 중</sub></td>
+    <td align="center" width="20%"><img src="./images/Newimages/피보호자-SOS.png" alt="SOS"/><br/><sub>SOS</sub></td>
+    <td align="center" width="20%"><img src="./images/Newimages/피보호자-내보호자.png" alt="내 보호자"/><br/><sub>내 보호자</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./images/Newimages/보호자웹-AI챗봇.png" alt="AI 챗봇"/><br/><sub>AI 챗봇</sub></td>
+    <td align="center"><img src="./images/Newimages/보호자웹-병원예약.png" alt="병원 예약"/><br/><sub>병원 예약</sub></td>
+    <td align="center"><img src="./images/Newimages/피보호자-병원예약%20현황.png" alt="예약 현황"/><br/><sub>예약 현황</sub></td>
+    <td align="center"><img src="./images/Newimages/피보호자-복약.png" alt="복약"/><br/><sub>복약 관리</sub></td>
+    <td align="center"><img src="./images/Newimages/피보호자-게임.png" alt="인지훈련 게임"/><br/><sub>인지훈련 게임</sub></td>
+  </tr>
+</table>
 
 ### 2.3 보호자 화면
 
@@ -64,29 +110,46 @@ SilverBridge는 독거 노인 및 취약계층을 대상으로, 위험 상황을
 - 병원 검색·예약
 - 복약 관리
 - 정서 상태 체크 (하루 5회 안부 대화 기록·감정 상태 확인)
-  ![sos](./images/Newimages/보호자웹-대시보드.png)
-  ![sos](./images/Newimages/보호자웹-이상감지_메인.png)
-  ![sos](./images/Newimages/보호자웹-이상감지_모달.png)
-  ![sos](./images/Newimages/보호자웹-AI챗봇.png)
-  ![sos](./images/Newimages/보호자웹-보호자_연결.png)
-  ![sos](./images/Newimages/보호자웹-병원예약.png)
-  ![sos](./images/Newimages/보호자웹-복약관리.png)
-  ![sos](./images/Newimages/보호자웹-SOS.png)
-  ![sos](./images/Newimages/보호자웹-정서상태체크.png)
+
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="./images/Newimages/보호자웹-대시보드.png" alt="대시보드"/><br/><sub>대시보드</sub></td>
+    <td align="center" width="33%"><img src="./images/Newimages/보호자웹-이상감지_메인.png" alt="이상감지 메인"/><br/><sub>이상감지 이력</sub></td>
+    <td align="center" width="33%"><img src="./images/Newimages/보호자웹-이상감지_모달.png" alt="이상감지 영상 확인"/><br/><sub>이상 발생 영상 확인</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./images/Newimages/보호자웹-AI챗봇.png" alt="AI 챗봇"/><br/><sub>AI 의료 챗봇</sub></td>
+    <td align="center"><img src="./images/Newimages/보호자웹-보호자_연결.png" alt="보호자 연결"/><br/><sub>피보호자 연결</sub></td>
+    <td align="center"><img src="./images/Newimages/보호자웹-병원예약.png" alt="병원 예약"/><br/><sub>병원 예약</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./images/Newimages/보호자웹-복약관리.png" alt="복약 관리"/><br/><sub>복약 관리</sub></td>
+    <td align="center"><img src="./images/Newimages/보호자웹-SOS.png" alt="SOS 수신 이력"/><br/><sub>SOS 수신 이력</sub></td>
+    <td align="center"><img src="./images/Newimages/보호자웹-정서상태체크.png" alt="정서 상태 체크"/><br/><sub>정서 상태 체크</sub></td>
+  </tr>
+</table>
 
 ### 2.4 알림
 
 - 웹 푸시 알림
 - 이메일 / SMS 알림
-- 카카오 알림톡 (연동 진행 중)
+- 카카오 알림톡
 - 알림 유형별 설정 화면
-  ![sos](./images/Newimages/보호자웹-환경설정.png)
+
+<p align="center">
+  <img src="./images/Newimages/보호자웹-환경설정.png" alt="알림 환경설정" width="60%"/>
+</p>
 
 ### 2.5 공통
 
 - 마이페이지
 - 공지사항 조회 / 1:1 문의
-  ![sos](./images/Newimages/보호자웹-공지.png)
+
+<p align="center">
+  <img src="./images/Newimages/보호자웹-공지.png" alt="공지사항" width="60%"/>
+</p>
+
+---
 
 ## 3. 서비스 아키텍처 / 흐름
 
@@ -107,108 +170,124 @@ flowchart LR
 
 ### 서비스 흐름
 
-```
-[긴급 상황]
-카메라 → AI 분석 (낙상·화재·흉기, YOLO 모델) → 위험 판단
+**🚨 긴급 상황**
+
+```text
+카메라 → AI 분석 (낙상·화재·흉기, YOLO) → 위험 판단
   → 보호자·관리자 즉시 알림 (웹 푸시·이메일·SMS·카카오 알림톡)
 SOS 버튼 → 보호자 즉시 알림
+```
 
-[평소 상황]
+**🏥 평소 상황**
+
+```text
 AI 의료 챗봇 → 증상 채팅 입력 → Claude 라우터가 모드 자동 분기
   ├─ 응급 증상  → 응급 키워드 강제 감지 + MedGemma 의료 LLM 답변
   ├─ 병원 예약  → Claude 기반 예약 대화 → 병원 검색 → 예약 연결
   └─ 일반 문의  → 일반 안내 답변
-
-[정서·인지 케어]
-치매 예방 인지훈련 게임   → 기억력·집중력 훈련 (구현)
-정서 상태 체크 (안부 대화) → 하루 5회 안부 → 보호자 화면에서 감정 상태 확인 (화면 구현)
-AI 말벗 (EXAONE)         → 음성 대화 → 외로움 해소·정서 케어 (개발 예정)
-AI 정서 분석 (HSEmotion)  → 표정·텍스트 분석 → 이상 심리 조기 감지 (개발 예정)
 ```
+
+**💛 정서·인지 케어**
+
+```text
+치매 예방 인지훈련 게임    → 기억력·집중력 훈련                          (구현)
+정서 상태 체크 (안부 대화) → 하루 5회 안부 → 보호자 화면에서 감정 확인    (화면 구현)
+AI 말벗 (EXAONE)          → 음성 대화 → 외로움 해소·정서 케어             (개발 중)
+AI 정서 분석 (HSEmotion)   → 표정·텍스트 분석 → 이상 심리 조기 감지       (개발 중)
+```
+
+---
 
 ## 4. 기술 스택
 
 ### 4.1 Frontend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeFe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeFe)
 
-| 분류      | 기술                          |
-| --------- | ----------------------------- |
+| 분류 | 기술 |
+| --- | --- |
 | Framework | Next.js 16 (SSR + CSR 혼합 구조) |
-| Language  | TypeScript                    |
-| UI        | React 19, CSS Modules         |
-| 서버 통신 | Axios, TanStack React Query   |
-| 알림      | FCM (웹 푸시)                 |
-| 인프라    | Docker, Nginx (reverse proxy) |
+| Language | TypeScript |
+| UI | React 19, CSS Modules |
+| 서버 통신 | Axios, TanStack React Query |
+| 알림 | FCM (웹 푸시) |
+| 인프라 | Docker, Nginx (reverse proxy) |
 
 ### 4.2 Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeBe-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeBe)
 
-| 분류                 | 기술                          |
-| -------------------- | ----------------------------- |
-| Language / Framework | Java 21 / Spring Boot 4.0    |
-| ORM                  | JPA, Hibernate                |
-| 통신                 | WebClient, WebSocket, SSE     |
-| 알림 채널            | FCM, 이메일, SMS, 카카오 알림톡 |
-| Database             | PostgreSQL, Redis             |
-| 인프라               | Docker, Nginx, GitHub Actions |
+| 분류 | 기술 |
+| --- | --- |
+| Language / Framework | Java 21 / Spring Boot 4.0 |
+| ORM | JPA, Hibernate |
+| 통신 | WebClient, WebSocket, SSE |
+| 알림 채널 | FCM, 이메일, SMS, 카카오 알림톡 |
+| Database | PostgreSQL, Redis |
+| 인프라 | Docker, Nginx, GitHub Actions |
 
 ### 4.3 AI Backend [![GitHub](https://img.shields.io/badge/GitHub-SilverBridgeAiServer-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Dongyang-Mirae-University-software/SilverBridgeAiServer)
 
-| 분류                 | 기술                  |
-| -------------------- | --------------------- |
-| Language / Framework | Python / FastAPI      |
-| 감지 모델            | YOLO (화재·흉기·낙상) |
-| 의료 챗봇            | MedGemma (응급 답변), Claude (라우터·예약 추출) |
-| 병원 예약 서비스     | NestJS                |
-| 인지훈련 게임        | FastAPI + SQLAlchemy  |
-| 인프라               | Docker, PyTorch       |
+| 분류 | 기술 |
+| --- | --- |
+| Language / Framework | Python / FastAPI |
+| 감지 모델 | YOLO (화재·흉기·낙상) |
+| 의료 챗봇 | MedGemma (응급 답변), Claude (라우터·예약 추출) |
+| 병원 예약 서비스 | NestJS |
+| 인지훈련 게임 | FastAPI + SQLAlchemy |
+| 인프라 | Docker, PyTorch |
 
-> 감정 분석(HSEmotion)·AI 말벗(EXAONE)은 2학기 개발 예정입니다.
+> 💡 정서 분석(HSEmotion)·AI 말벗(EXAONE)은 현재 개발 중입니다.
+
+---
 
 ## 5. 개발 현황
 
-| 기능                                                   | 상태          |
-| ------------------------------------------------------ | ------------- |
-| 인증 시스템 (이메일·카카오 로그인, JWT)                | ✅ 완료       |
-| 보호자-피보호자 연결, 대시보드, 공지·문의, SOS         | ✅ 완료       |
-| AI 이상감지 (화재·흉기·낙상, WebSocket 연동)           | ✅ 구현       |
-| AI 의료 챗봇 (MedGemma + Claude 라우터, 병원 예약)     | ✅ 구현       |
-| 복약 관리                                              | ✅ 구현       |
-| 알림 (웹 푸시·이메일·SMS)                              | ✅ 구현       |
-| 카카오 알림톡 연동                                     | 🔄 진행 중    |
-| 치매 예방 인지훈련 게임                                | ✅ 구현       |
-| AI 감정 분석 / AI 말벗                                 | 📌 개발 예정  |
-| 통합 테스트 / 운영 배포                                | 🔄 진행 중    |
+**2학기 중간 발표 기준 — 정서 체크를 제외한 모든 기능 구현 완료**
+
+| 기능 | 상태 |
+| --- | :---: |
+| 인증 시스템 (이메일·카카오 로그인, JWT) | ✅ 완료 |
+| 보호자-피보호자 연결, 대시보드, 공지·문의, SOS | ✅ 완료 |
+| AI 이상감지 (화재·흉기·낙상, WebSocket 연동) | ✅ 완료 |
+| AI 의료 챗봇 (MedGemma + Claude 라우터, 병원 예약) | ✅ 완료 |
+| 복약 관리 | ✅ 완료 |
+| 알림 (웹 푸시·이메일·SMS·카카오 알림톡) | ✅ 완료 |
+| 치매 예방 인지훈련 게임 | ✅ 완료 |
+| 통합 테스트 / 운영 배포 | ✅ 완료 |
+| 정서 체크 (AI 정서 분석 · AI 말벗) | 🔄 개발 중 |
+
+---
 
 ## 6. 팀 구성
 
-| 이름     | 역할                                                                                 |
-| -------- | ------------------------------------------------------------------------------------ |
-| 이하늘   | **팀장 / AI / Infra** - 병원 예약 시스템, 인프라 아키텍처, AI 챗봇, 치매 예방 게임   |
-| 남궁명진 | **Backend** - DB 설계, REST API, 인증/인가, 외부 서비스·AI 서버 연동, 품질/보안 관리 |
-| 이윤아   | **Frontend** - Next.js/React 컴포넌트, UI/UX 설계, 반응형 레이아웃, 백엔드 API 연동  |
-| 이재희   | **AI** - 감정 분석·이상감지·말벗 AI 개발 및 모델 학습                                |
+| 이름 | 역할 |
+| --- | --- |
+| **이하늘** | **팀장 / AI / Infra** — 병원 예약 시스템, 인프라 아키텍처, AI 챗봇, 치매 예방 게임 |
+| **남궁명진** | **Backend** — DB 설계, REST API, 인증/인가, 외부 서비스·AI 서버 연동, 품질/보안 관리 |
+| **이윤아** | **Frontend** — Next.js/React 컴포넌트, UI/UX 설계, 반응형 레이아웃, 백엔드 API 연동 |
+| **이재희** | **AI** — 정서 분석·이상감지·말벗 AI 개발 및 모델 학습 |
+
+---
 
 ## 7. 시연 영상 / 발표 자료
 
 ### 7.1 시연 영상
 
-- **YouTube 시연 영상**:
+[![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM)
 
-  [![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM)
+**AI 이상감지 테스트 영상** (실제 가정 환경 CCTV 촬영)
 
-- **AI 이상감지 테스트 영상** (실제 가정 환경 CCTV 촬영):
-
-  | 흉기 감지 | 낙상 감지 |
-  | --- | --- |
-  | [▶ 흉기감지_테스트.mp4](videos/흉기감지_테스트.mp4) | [▶ 낙상감지_테스트.mp4](videos/낙상감지_테스트.mp4) |
+| 흉기 감지 | 낙상 감지 |
+| :---: | :---: |
+| [▶ 흉기감지_테스트.mp4](videos/흉기감지_테스트.mp4) | [▶ 낙상감지_테스트.mp4](videos/낙상감지_테스트.mp4) |
 
 ### 7.2 발표 자료 / 문서
 
 | 구분 | 파일 |
-| --- | --- |
+| --- | :---: |
 | 프로젝트 브로셔 | [![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf) |
 | 1학기 중간발표 (프로젝트 제안서) | [![PPT](https://img.shields.io/badge/중간발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_중간발표.pptx) |
 | 1학기 최종발표 | [![PPT](https://img.shields.io/badge/최종발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_최종발표.pptx) |
 | 2학기 프로젝트 계획서 | [![PPT](https://img.shields.io/badge/2학기_계획서-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_2학기_프로젝트계획서.pptx) |
+
+---
 
 ## 8. 저장소 목록
 

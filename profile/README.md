@@ -276,9 +276,11 @@ flowchart LR
 
 - **YouTube 시연 영상**
 
-[![CareAI 시연 영상](youtube.com/watch?v=mdapIXzJaoo&feature=youtu.be)
+[![CareAI 시연 영상](https://img.youtube.com/vi/mdapIXzJaoo/maxresdefault.jpg)](https://www.youtube.com/watch?v=mdapIXzJaoo)
 
 ▶ 이미지를 누르면 YouTube 시연 영상으로 이동합니다.
+
+
 
 - **AI 이상감지 테스트 영상** (실제 가정 환경 CCTV 촬영)
 

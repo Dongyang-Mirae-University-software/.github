@@ -296,7 +296,7 @@ flowchart LR
 | 1학기 중간발표 (프로젝트 제안서) | [![PPT](https://img.shields.io/badge/중간발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_중간발표.pptx) |
 | 1학기 최종발표 | [![PPT](https://img.shields.io/badge/최종발표-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_최종발표.pptx) |
 | 2학기 프로젝트 계획서 | [![PPT](https://img.shields.io/badge/2학기_계획서-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_2학기_프로젝트계획서.pptx) |
-| 2학기 중간평가 | [![PPT](https://img.shields.io/badge/2학기_중간평가-PPT-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_2학기_중간평가.pptx) |
+| 2학기 중간평가 | [![PPT](https://download.gosky.kr/d/SilverBridgeSky/%EC%8B%A4%EB%B2%84%EB%B8%8C%EB%A6%BF%EC%A7%80_2%ED%95%99%EA%B8%B0_%EC%A4%91%EA%B0%84%ED%8F%89%EA%B0%80.pptx) |
 
 ---
 

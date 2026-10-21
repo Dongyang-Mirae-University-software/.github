@@ -276,7 +276,9 @@ flowchart LR
 
 - **YouTube 시연 영상**
 
-  [![YouTube](https://img.shields.io/badge/YouTube-시연영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=y4lUm_REdXM)
+[![CareAI 시연 영상](youtube.com/watch?v=mdapIXzJaoo&feature=youtu.be)
+
+▶ 이미지를 누르면 YouTube 시연 영상으로 이동합니다.
 
 - **AI 이상감지 테스트 영상** (실제 가정 환경 CCTV 촬영)
 

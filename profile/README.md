@@ -214,7 +214,7 @@ AI에게 주는 **지시문(프롬프트)을 두 갈래로 고쳤습니다.**
 | **Backend** | Java 21 · Spring Boot 4 · JPA · Flyway · WebSocket · NestJS · Prisma (병원 예약) |
 | **AI** | Python · FastAPI · PyTorch · YOLO26 · OpenCV · MedGemma · EXAONE · Whisper · HSEmotion · Claude API · Gemini TTS |
 | **Database** | PostgreSQL 17 · Redis · SQLite |
-| **알림&nbsp;·&nbsp;로그인** | Firebase FCM 웹 푸시 · Solapi 문자 · 카카오 알림톡 · SMTP 이메일 · 카카오 로그인 |
+| **Notification** | Firebase FCM 웹 푸시 · Solapi 문자 · 카카오 알림톡 · SMTP 이메일 · 카카오 로그인 |
 | **DevOps** | Ubuntu · Docker · Nginx · GitHub Actions |
 
 ---

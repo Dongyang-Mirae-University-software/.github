@@ -330,10 +330,17 @@ AI에게 주는 **지시문(프롬프트)을 두 갈래로 고쳤습니다.**
 
 ### ▶️ 시연 영상
 
-| 🆕 CareAI v2 시연 영상 (4분 35초) | 📺 YouTube 시연 영상 |
-| :---: | :---: |
-| [![CareAI v2 시연 영상](./images/demo-v2-thumb.jpg)](videos/CareAI_v2_시연영상.mp4) | [![CareAI 시연 영상](https://img.youtube.com/vi/mdapIXzJaoo/maxresdefault.jpg)](https://www.youtube.com/watch?v=mdapIXzJaoo) |
-| <sub>그림을 누르면 영상 파일로 이동합니다</sub> | <sub>그림을 누르면 YouTube로 이동합니다</sub> |
+**🆕 CareAI v2 시연 영상 (4분 35초)** - 재생 버튼을 누르면 바로 볼 수 있습니다.
+
+https://github.com/user-attachments/assets/a421daa3-98c2-4db5-8e7a-a35cc6030421
+
+<sub>🎞️ 고화질(1080p) 영상은 [여기](videos/CareAI_v2_시연영상.mp4)에서 내려받을 수 있습니다.</sub>
+
+**📺 YouTube 시연 영상**
+
+[![CareAI 시연 영상](https://img.youtube.com/vi/mdapIXzJaoo/maxresdefault.jpg)](https://www.youtube.com/watch?v=mdapIXzJaoo)
+
+<sub>그림을 누르면 YouTube로 이동합니다.</sub>
 
 | AI 이상 감지 테스트 (실제 가정 환경 촬영) | |
 | --- | --- |

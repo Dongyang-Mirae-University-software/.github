@@ -7,7 +7,7 @@
 AI 기반 독거노인 통합 케어 플랫폼 - 동양미래대학교 캡스톤디자인
 
 [![Service](./images/badges/badge-c9fec1.svg)](https://dmu.gosky.kr)
-[![YouTube](./images/badges/youtube-76a2cb.svg)](https://www.youtube.com/watch?v=mdapIXzJaoo)
+[![시연 영상](./images/badges/demo-video.svg)](#-9-시연-영상--발표-자료)
 [![PDF](./images/badges/badge-61b6f0.svg)](docs/실버브릿지_브로셔.pdf)
 
 ![Next.js](./images/badges/next-js-206052.svg)
@@ -73,7 +73,7 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 
 ## 📱 3. 실제 화면
 
-> 어르신은 iPad(태블릿 웹), 보호자는 휴대폰 웹, 관리자는 PC 웹으로 사용합니다. 아래는 실제 서버에서 캡쳐한 화면입니다.
+> 어르신은 iPad(태블릿 웹), 보호자는 휴대폰 웹, 관리자는 PC 웹으로 사용합니다. 아래는 실제 서버에서 캡처한 화면입니다.
 
 ### 🚨 3.1 AI 이상 감지
 
@@ -114,7 +114,7 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 
 ![챗봇 119 · 109](./images/chatbot-emergency.png)
 
-**챗봇으로 예약하면, 보호자 화면에 '병원 가는 날'로 바로 보입니다.** (제휴 병원 46곳)
+**챗봇으로 예약하면, 보호자 화면에 '병원 가는 날'로 바로 보입니다.** (등록 병원 46곳 · 가상 데이터)
 
 ![챗봇 병원 예약](./images/chatbot-reservation.png)
 
@@ -152,7 +152,7 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 
 ## 📊 4. AI 성과
 
-> 아래 숫자는 모두 **학습에 쓰지 않은 자료**로 잰 값입니다. 어떻게 쟀는지는 [4.4](#-44-ai-성능-검증-방법)에 정리했습니다.
+> 아래 숫자는 모두 **개선에 쓰지 않은 검증 자료**로 잰 값입니다. 어떻게 쟀는지는 [4.4](#-44-ai-성능-검증-방법)에 정리했습니다.
 
 ### 🚨 4.1 AI 이상 감지
 
@@ -242,7 +242,7 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 <details>
 <summary>📝 검증 방법을 글로 보기</summary>
 
-- **🚨 AI 이상 감지** - 계명대학교 화재 영상 · ETRI 부엌 칼 사용 영상 · CCTV · 어르신 낙상 영상
+- **🚨 AI 이상 감지** - 계명대학교 화재 영상 · ETRI 부엌 칼 사용 영상 · CCTV 어르신 낙상 영상
   불이 난 영상 24개를 AI에게 보여 주고 → 불을 찾아 알리면 정답 (24개 중 20개 → 83.3%)
 - **🩺 AI 의료 챗봇** - 질병관리청 · 2025 응급처치 가이드라인 · 국가건강정보포털
   "가슴이 쪼이고 식은땀이 나요" 같은 질문 597개를 묻고 → 119를 안내하면 정답 (팀원 2명이 문항 검수)
@@ -272,10 +272,10 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 | 분류 | 기술 |
 | --- | --- |
 | 🎨 **Frontend** | ![Next.js](./images/badges/next-js-206052.svg) ![React](./images/badges/react-be47ff.svg) ![TypeScript](./images/badges/typescript-e02e15.svg) ![Node.js](./images/badges/node-js-505e41.svg) |
-| ⚙️ **Backend** | ![Java 21](./images/badges/java-21-84f281.svg) ![Spring Boot 4](./images/badges/spring-boot-4-7753b6.svg) ![JPA](./images/badges/jpa-hibernate-e9b1b0.svg) ![Flyway](./images/badges/flyway-909047.svg) ![WebSocket](./images/badges/websocket-stomp-42bf33.svg) ![NestJS](./images/badges/nestjs-c4b2c0.svg) ![Prisma](./images/badges/prisma-6bbff7.svg) |
+| ⚙️ **Backend** | ![Java 21](./images/badges/java-21-84f281.svg) ![Spring Boot 4](./images/badges/spring-boot-4-7753b6.svg) ![JPA](./images/badges/jpa-hibernate-e9b1b0.svg) ![Flyway](./images/badges/flyway-909047.svg) ![WebSocket](./images/badges/websocket-stomp-42bf33.svg) ![NestJS](./images/badges/nestjs-c4b2c0.svg) ![Prisma](./images/badges/prisma-6bbff7.svg) ![Kakao](./images/badges/badge-d9d8fe.svg) |
 | 🤖 **AI** | ![Python](./images/badges/python-6af2d5.svg) ![FastAPI](./images/badges/fastapi-c94c78.svg) ![PyTorch](./images/badges/pytorch-127c5c.svg) ![YOLO26](./images/badges/yolo26-4d4931.svg) ![OpenCV](./images/badges/opencv-7c7374.svg) ![MedGemma](./images/badges/medgemma-092993.svg) ![EXAONE](./images/badges/exaone-657dae.svg) ![Whisper](./images/badges/whisper-ecdcd1.svg) ![HSEmotion](./images/badges/hsemotion-3766ef.svg) ![Claude API](./images/badges/claude-api-35c810.svg) ![Gemini TTS](./images/badges/gemini-tts-3191c6.svg) |
 | 🗄️ **Database** | ![PostgreSQL 17](./images/badges/postgresql-17-cd248b.svg) ![Redis](./images/badges/redis-e5bc36.svg) ![SQLite](./images/badges/sqlite-d9baa5.svg) |
-| 🔔 **Notification** | ![Firebase FCM](./images/badges/firebase-fcm-87d891.svg) ![Solapi](./images/badges/solapi-3036f6.svg) ![SMTP](./images/badges/smtp-befa44.svg) ![Kakao](./images/badges/badge-d9d8fe.svg) |
+| 🔔 **Notification** | ![Firebase FCM](./images/badges/firebase-fcm-87d891.svg) ![Solapi](./images/badges/solapi-3036f6.svg) ![SMTP](./images/badges/smtp-befa44.svg) |
 | 🐳 **DevOps** | ![Ubuntu](./images/badges/ubuntu-2450bc.svg) ![Docker](./images/badges/docker-362f4b.svg) ![Nginx](./images/badges/nginx-0055e5.svg) ![GitHub Actions](./images/badges/github-actions-4abc81.svg) ![NVIDIA DGX Spark](./images/badges/nvidia-dgx-spark-b0354a.svg) |
 
 ---
@@ -288,7 +288,7 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 <tr>
 <th width="33%">🖥️ 서버 하드웨어</th>
 <th width="33%">🏥 병원 시스템 연동</th>
-<th width="33%">🩺 전문가 검증</th>
+<th width="33%">👨‍⚕️ 전문가 검증</th>
 </tr>
 <tr valign="top">
 <td>
@@ -354,8 +354,8 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 #### ⚙️ 남궁명진 &nbsp;`백엔드` `AI 개선`
 
 - Spring Boot 백엔드 전반 - 인증(JWT · 카카오), 보호자 연결, SOS, 이상 감지 판정 · 알림, 복약, 관리자, WebSocket
-- 알림 채널 연동(FCM 웹 푸시 · Solapi 문자 · 알림톡 · 이메일)
-- AI 의료 챗봇 개선 - 응급 · 자해 판단, 지시문(프롬프트) 개선, 근거 있는 시험지
+- 알림 채널 연동(FCM 앱 푸시 · Solapi 문자 · 알림톡 · 이메일)
+- AI 의료 챗봇 개선 - 응급 · 자해 판단, 지시문(프롬프트) 개선, 근거 있는 검증 문항
 - 이상 감지 모델 재학습(DGX Spark), AI 기분체크 성능 개선, 실제 화면 E2E QA 자동화
 
 #### 🤖 이재희 &nbsp;`AI 엔지니어`
@@ -388,9 +388,10 @@ https://github.com/user-attachments/assets/8ff00f4b-a7fb-4111-b036-1b9f94667594
 
 <sub>그림을 누르면 YouTube로 이동합니다.</sub>
 
-| AI 이상 감지 테스트 (실제 가정 환경 촬영) | |
-| --- | --- |
-| [🔪 흉기 감지 테스트](videos/흉기감지_테스트.mp4) | [🧍 낙상 감지 테스트](videos/낙상감지_테스트.mp4) |
+**🎥 AI 이상 감지 테스트 영상** (실제 가정 환경 촬영)
+
+- [🔪 흉기 감지 테스트](videos/흉기감지_테스트.mp4)
+- [🧍 낙상 감지 테스트](videos/낙상감지_테스트.mp4)
 
 ### 📂 발표 자료
 

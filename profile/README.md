@@ -364,9 +364,9 @@ AI에게 주는 **지시문(프롬프트)을 두 갈래로 고쳤습니다.**
 
 ### ▶️ 시연 영상
 
-**🆕 CareAI v2 시연 영상 (4분 35초)** - 재생 버튼을 누르면 바로 볼 수 있습니다.
+**🆕 CareAI v2 시연 영상 (4분 47초)** - 재생 버튼을 누르면 바로 볼 수 있습니다.
 
-https://github.com/user-attachments/assets/a421daa3-98c2-4db5-8e7a-a35cc6030421
+https://github.com/user-attachments/assets/8ff00f4b-a7fb-4111-b036-1b9f94667594
 
 <sub>🎞️ 고화질(1080p) 영상은 [여기](videos/CareAI_v2_시연영상.mp4)에서 내려받을 수 있습니다.</sub>
 

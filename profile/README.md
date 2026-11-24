@@ -6,17 +6,17 @@
 
 AI 기반 독거노인 통합 케어 플랫폼 - 동양미래대학교 캡스톤디자인
 
-[![Service](https://img.shields.io/badge/서비스_체험-dmu.gosky.kr-B7472A?style=for-the-badge)](https://dmu.gosky.kr)
-[![YouTube](https://img.shields.io/badge/YouTube-시연_영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=mdapIXzJaoo)
-[![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf)
+[![Service](./images/badges/badge-c9fec1.svg)](https://dmu.gosky.kr)
+[![YouTube](./images/badges/youtube-76a2cb.svg)](https://www.youtube.com/watch?v=mdapIXzJaoo)
+[![PDF](./images/badges/badge-61b6f0.svg)](docs/실버브릿지_브로셔.pdf)
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot_4-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Next.js](./images/badges/next-js-206052.svg)
+![Spring Boot](./images/badges/spring-boot-4-7753b6.svg)
+![FastAPI](./images/badges/fastapi-c94c78.svg)
+![PyTorch](./images/badges/pytorch-127c5c.svg)
+![PostgreSQL](./images/badges/postgresql-80a83a.svg)
+![Redis](./images/badges/redis-e5bc36.svg)
+![Docker](./images/badges/docker-362f4b.svg)
 
 </div>
 
@@ -173,9 +173,9 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 
 | 위험 | 출처 |
 | --- | --- |
-| 🔥 화재 | ![AI Hub](https://img.shields.io/badge/AI_Hub-0064FF?style=flat-square) ![Science Data Bank](https://img.shields.io/badge/Science_Data_Bank-1F6FB2?style=flat-square) ![Roboflow](https://img.shields.io/badge/Roboflow-6706CE?style=flat-square&logo=roboflow&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Zenodo](https://img.shields.io/badge/Zenodo-1682D4?style=flat-square&logo=zenodo&logoColor=white) ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white) ![계명대학교](https://img.shields.io/badge/계명대학교-003876?style=flat-square) |
-| 🔪 흉기 | ![AI Hub](https://img.shields.io/badge/AI_Hub-0064FF?style=flat-square) ![Roboflow](https://img.shields.io/badge/Roboflow-6706CE?style=flat-square&logo=roboflow&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![LVIS](https://img.shields.io/badge/LVIS-4A5568?style=flat-square) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black) |
-| 🧍 낙상 | ![AI Hub](https://img.shields.io/badge/AI_Hub-0064FF?style=flat-square) ![ETRI](https://img.shields.io/badge/ETRI-00A0E9?style=flat-square) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![Harvard Dataverse](https://img.shields.io/badge/Harvard_Dataverse-A51C30?style=flat-square) ![Toyota Smarthome](https://img.shields.io/badge/Toyota_Smarthome-EB0A1E?style=flat-square&logo=toyota&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Open Images](https://img.shields.io/badge/Open_Images-4285F4?style=flat-square&logo=google&logoColor=white) |
+| 🔥 화재 | ![AI Hub](./images/badges/ai-hub-9616f1.svg) ![Science Data Bank](./images/badges/science-data-bank-37454b.svg) ![Roboflow](./images/badges/roboflow-7ed4b4.svg) ![GitHub](./images/badges/github-7a78c0.svg) ![Zenodo](./images/badges/zenodo-2772f2.svg) ![Kaggle](./images/badges/kaggle-9965e0.svg) ![계명대학교](./images/badges/badge-6adec5.svg) |
+| 🔪 흉기 | ![AI Hub](./images/badges/ai-hub-9616f1.svg) ![Roboflow](./images/badges/roboflow-7ed4b4.svg) ![GitHub](./images/badges/github-7a78c0.svg) ![LVIS](./images/badges/lvis-47f553.svg) ![Hugging Face](./images/badges/hugging-face-3f0002.svg) |
+| 🧍 낙상 | ![AI Hub](./images/badges/ai-hub-9616f1.svg) ![ETRI](./images/badges/etri-afab07.svg) ![Hugging Face](./images/badges/hugging-face-3f0002.svg) ![Harvard Dataverse](./images/badges/harvard-dataverse-ebe274.svg) ![Toyota Smarthome](./images/badges/toyota-smarthome-2bbea1.svg) ![GitHub](./images/badges/github-7a78c0.svg) ![Open Images](./images/badges/open-images-159f09.svg) |
 
 </details>
 
@@ -271,12 +271,12 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 
 | 분류 | 기술 |
 | --- | --- |
-| 🎨 **Frontend** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) |
-| ⚙️ **Backend** | ![Java 21](https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot 4](https://img.shields.io/badge/Spring_Boot_4-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![JPA](https://img.shields.io/badge/JPA_·_Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white) ![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white) ![WebSocket](https://img.shields.io/badge/WebSocket_·_STOMP-010101?style=flat-square) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) |
-| 🤖 **AI** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![YOLO26](https://img.shields.io/badge/YOLO26-111F68?style=flat-square) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![MedGemma](https://img.shields.io/badge/MedGemma-4285F4?style=flat-square&logo=google&logoColor=white) ![EXAONE](https://img.shields.io/badge/EXAONE-A50034?style=flat-square&logo=lg&logoColor=white) ![Whisper](https://img.shields.io/badge/Whisper-412991?style=flat-square) ![HSEmotion](https://img.shields.io/badge/HSEmotion-FF7043?style=flat-square) ![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Gemini TTS](https://img.shields.io/badge/Gemini_TTS-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) |
-| 🗄️ **Database** | ![PostgreSQL 17](https://img.shields.io/badge/PostgreSQL_17-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) |
-| 🔔 **Notification** | ![Firebase FCM](https://img.shields.io/badge/Firebase_FCM-DD2C00?style=flat-square&logo=firebase&logoColor=white) ![Solapi](https://img.shields.io/badge/Solapi_문자_·_알림톡-3B82F6?style=flat-square) ![SMTP](https://img.shields.io/badge/SMTP_이메일-EA4335?style=flat-square&logo=gmail&logoColor=white) ![Kakao](https://img.shields.io/badge/카카오_로그인-FFCD00?style=flat-square&logo=kakaotalk&logoColor=black) |
-| 🐳 **DevOps** | ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![NVIDIA DGX Spark](https://img.shields.io/badge/NVIDIA_DGX_Spark-76B900?style=flat-square&logo=nvidia&logoColor=white) |
+| 🎨 **Frontend** | ![Next.js](./images/badges/next-js-206052.svg) ![React](./images/badges/react-be47ff.svg) ![TypeScript](./images/badges/typescript-e02e15.svg) ![Node.js](./images/badges/node-js-505e41.svg) |
+| ⚙️ **Backend** | ![Java 21](./images/badges/java-21-84f281.svg) ![Spring Boot 4](./images/badges/spring-boot-4-7753b6.svg) ![JPA](./images/badges/jpa-hibernate-e9b1b0.svg) ![Flyway](./images/badges/flyway-909047.svg) ![WebSocket](./images/badges/websocket-stomp-42bf33.svg) ![NestJS](./images/badges/nestjs-c4b2c0.svg) ![Prisma](./images/badges/prisma-6bbff7.svg) |
+| 🤖 **AI** | ![Python](./images/badges/python-6af2d5.svg) ![FastAPI](./images/badges/fastapi-c94c78.svg) ![PyTorch](./images/badges/pytorch-127c5c.svg) ![YOLO26](./images/badges/yolo26-4d4931.svg) ![OpenCV](./images/badges/opencv-7c7374.svg) ![MedGemma](./images/badges/medgemma-092993.svg) ![EXAONE](./images/badges/exaone-657dae.svg) ![Whisper](./images/badges/whisper-ecdcd1.svg) ![HSEmotion](./images/badges/hsemotion-3766ef.svg) ![Claude API](./images/badges/claude-api-35c810.svg) ![Gemini TTS](./images/badges/gemini-tts-3191c6.svg) |
+| 🗄️ **Database** | ![PostgreSQL 17](./images/badges/postgresql-17-cd248b.svg) ![Redis](./images/badges/redis-e5bc36.svg) ![SQLite](./images/badges/sqlite-d9baa5.svg) |
+| 🔔 **Notification** | ![Firebase FCM](./images/badges/firebase-fcm-87d891.svg) ![Solapi](./images/badges/solapi-3036f6.svg) ![SMTP](./images/badges/smtp-befa44.svg) ![Kakao](./images/badges/badge-d9d8fe.svg) |
+| 🐳 **DevOps** | ![Ubuntu](./images/badges/ubuntu-2450bc.svg) ![Docker](./images/badges/docker-362f4b.svg) ![Nginx](./images/badges/nginx-0055e5.svg) ![GitHub Actions](./images/badges/github-actions-4abc81.svg) ![NVIDIA DGX Spark](./images/badges/nvidia-dgx-spark-b0354a.svg) |
 
 ---
 
@@ -396,11 +396,11 @@ https://github.com/user-attachments/assets/8ff00f4b-a7fb-4111-b036-1b9f94667594
 
 | 구분 | 파일 |
 | --- | --- |
-| 📰 프로젝트 브로셔 | [![PDF](https://img.shields.io/badge/PDF-EC1C24?style=flat-square&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf) |
-| 📝 1학기 중간발표 (프로젝트 제안서) | [![PPT](https://img.shields.io/badge/PPT-B7472A?style=flat-square&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_중간발표.pptx) |
-| 🏁 1학기 최종발표 | [![PPT](https://img.shields.io/badge/PPT-B7472A?style=flat-square&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_최종발표.pptx) |
-| 🗓️ 2학기 프로젝트 계획서 | [![PPT](https://img.shields.io/badge/PPT-B7472A?style=flat-square&logo=microsoftpowerpoint&logoColor=white)](docs/실버브릿지_2학기_프로젝트계획서.pptx) |
-| 📈 2학기 중간평가 | [![PPT](https://img.shields.io/badge/PPT-B7472A?style=flat-square&logo=microsoftpowerpoint&logoColor=white)](https://download.gosky.kr/d/SilverBridgeSky/%EC%8B%A4%EB%B2%84%EB%B8%8C%EB%A6%BF%EC%A7%80_2%ED%95%99%EA%B8%B0_%EC%A4%91%EA%B0%84%ED%8F%89%EA%B0%80.pptx) |
+| 📰 프로젝트 브로셔 | [![PDF](./images/badges/pdf-0b80c0.svg)](docs/실버브릿지_브로셔.pdf) |
+| 📝 1학기 중간발표 (프로젝트 제안서) | [![PPT](./images/badges/ppt-b7e991.svg)](docs/실버브릿지_중간발표.pptx) |
+| 🏁 1학기 최종발표 | [![PPT](./images/badges/ppt-b7e991.svg)](docs/실버브릿지_최종발표.pptx) |
+| 🗓️ 2학기 프로젝트 계획서 | [![PPT](./images/badges/ppt-b7e991.svg)](docs/실버브릿지_2학기_프로젝트계획서.pptx) |
+| 📈 2학기 중간평가 | [![PPT](./images/badges/ppt-b7e991.svg)](https://download.gosky.kr/d/SilverBridgeSky/%EC%8B%A4%EB%B2%84%EB%B8%8C%EB%A6%BF%EC%A7%80_2%ED%95%99%EA%B8%B0_%EC%A4%91%EA%B0%84%ED%8F%89%EA%B0%80.pptx) |
 
 ---
 

@@ -6,7 +6,7 @@
 
 AI 기반 독거노인 통합 케어 플랫폼 - 동양미래대학교 캡스톤디자인
 
-[![Service](https://img.shields.io/badge/서비스_체험-devdmu.gosky.kr-B7472A?style=for-the-badge)](https://devdmu.gosky.kr)
+[![Service](https://img.shields.io/badge/서비스_체험-dmu.gosky.kr-B7472A?style=for-the-badge)](https://dmu.gosky.kr)
 [![YouTube](https://img.shields.io/badge/YouTube-시연_영상-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=mdapIXzJaoo)
 [![PDF](https://img.shields.io/badge/브로셔-PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/실버브릿지_브로셔.pdf)
 
@@ -152,27 +152,24 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 
 ## 📊 4. AI 성과
 
+> 아래 숫자는 모두 **학습에 쓰지 않은 자료**로 잰 값입니다. 어떻게 쟀는지는 [4.4](#-44-ai-성능-검증-방법)에 정리했습니다.
+
 ### 🚨 4.1 AI 이상 감지
 
-여러 차례 다시 학습하며, 실제 영상에서 더 잘 찾는 모델만 골라 배포했습니다.
+**N차 학습을 반복하며, 실제 영상에서 더 잘 찾는 모델만 골랐습니다.**
 
-| 위험 | 모델 | 탐지율 | 오탐률 | 학습 데이터 |
-| --- | :---: | :---: | :---: | --- |
-| 🔥 화재 | YOLO26 nano | **83.3%** | 10% | 사진 6.5만 장 · 영상 2,500개 |
-| 🔪 흉기 | YOLO26 medium | **89.8%** | 10% | 사진 6만 장 · 영상 74개 |
-| 🧍 낙상 | YOLO26 nano | **75.7%** | 8.5% | 사진 14만 장 · 영상 4.8만 개 |
+![AI 이상 감지 성과](./images/anomaly-results.png)
 
-<sub>낙상은 오탐(앉기 · 눕기를 낙상으로 착각)을 38.7%에서 8.5%로 줄이는 쪽을 택해, 탐지율이 92.6%에서 75.7%로 낮아졌습니다.</sub>
+| 위험 | 모델 | 탐지율 | 오탐률 |
+| --- | :---: | :---: | :---: |
+| 🔥 화재 | YOLO26 nano | **83.3%** (24개 중 20개) | **10%** (10개 중 1개) |
+| 🔪 흉기 | YOLO26 medium | **89.8%** (2,212개 중 1,987개) | **10%** (요리 칼 597개 중 60개) |
+| 🧍 낙상 | YOLO26 nano | **75.7%** (140개 중 106개) | **8.5%** (82개 중 7개) |
 
-**🧮 이 %는 이렇게 계산했습니다** - 학습에 쓰지 않은 실제 영상으로 시험했습니다.
+<sub>낙상은 앉기 · 눕기를 낙상으로 착각하는 오탐을 38.7%에서 8.5%로 줄이는 쪽을 택해, 탐지율이 92.6%에서 75.7%가 되었습니다.</sub>
 
-| 위험 | 탐지율 = 잡은 수 ÷ 위험 영상 | 오탐률 = 잘못 울린 수 ÷ 위험 없는 영상 |
-| --- | --- | --- |
-| 🔥 화재 | 불이 난 영상 24개 중 20개 → **83.3%** | 불 없는 영상 10개 중 1개 → **10%** |
-| 🔪 흉기 | 주거 CCTV 흉기 장면 2,212개 중 1,987개 → **89.8%** | 부엌 요리 칼 영상 597개 중 60개 → **10%** |
-| 🧍 낙상 | 낙상 영상 140개 중 106개 → **75.7%** | 넘어짐 없는 영상 82개 중 7개 → **8.5%** |
-
-**📚 학습 데이터 출처**
+<details>
+<summary>📚 학습 데이터 출처 보기</summary>
 
 | 위험 | 출처 |
 | --- | --- |
@@ -180,23 +177,28 @@ AI 의료 챗봇이 증상 상담부터 병원 예약까지 돕고, AI가 하루
 | 🔪 흉기 | ![AI Hub](https://img.shields.io/badge/AI_Hub-0064FF?style=flat-square) ![Roboflow](https://img.shields.io/badge/Roboflow-6706CE?style=flat-square&logo=roboflow&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![LVIS](https://img.shields.io/badge/LVIS-4A5568?style=flat-square) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black) |
 | 🧍 낙상 | ![AI Hub](https://img.shields.io/badge/AI_Hub-0064FF?style=flat-square) ![ETRI](https://img.shields.io/badge/ETRI-00A0E9?style=flat-square) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black) ![Harvard Dataverse](https://img.shields.io/badge/Harvard_Dataverse-A51C30?style=flat-square) ![Toyota Smarthome](https://img.shields.io/badge/Toyota_Smarthome-EB0A1E?style=flat-square&logo=toyota&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Open Images](https://img.shields.io/badge/Open_Images-4285F4?style=flat-square&logo=google&logoColor=white) |
 
+</details>
+
 ### 🩺 4.2 AI 의료 챗봇
 
-AI에게 주는 **지시문(프롬프트)을 두 갈래로 고쳤습니다.**
+**AI에게 주는 지시문(프롬프트)을 두 갈래로 고쳤습니다.**
 질문을 나누는 AI(Claude)는 응급 · 자해 판단을, 답을 쓰는 의료 AI(MedGemma)는 일반 증상 답을 맡습니다.
 
 ![지시문 개선](./images/prompt-rules.png)
 
+**그 결과, 처음과 지금을 비교하면**
+
+![AI 의료 챗봇 결과](./images/chatbot-results.png)
+
+<details>
+<summary>📝 지시문 규칙 · 결과 숫자를 글로 보기</summary>
+
 | ① Claude 지시문에 더한 규칙 | ② MedGemma 지시문에 더한 규칙 |
 | --- | --- |
 | ➕ **응급** - 즉시 119가 필요한 신호가 있으면 응급으로 판단 | ➕ **119** - 숨참 · 가슴 통증 같은 위험 신호가 있을 때만 |
-| ➕ **자해** - 자해 생각이 보이면 위기로, 화제가 바뀌면 평소 대화로 | ➕ **진료 기준** - 언제 꼭 진료받을지 기준 하나 (기간 · 수치 · 함께 생긴 증상) |
-| ➕ **심정지** - 반응이 없고 숨을 쉬지 않으면 심정지 의심으로 | ➕ **약 질문** - 단정하지 말고, 조심할 이유 + 약사 · 의사에게 확인할 것 |
-| ➕ **오늘 진료** - 오늘 진료가 필요한 질환은 따로 표시 | ➕ **예시** - 예시 문장을 그대로 쓰지 말고 지금 질문에 맞게 새로 |
-
-<sub>규칙은 실제 지시문을 줄여 적은 것입니다.</sub>
-
-**📈 고친 뒤 결과**
+| ➕ **자해** - 자해 생각이 보이면 위기로, 화제가 바뀌면 평소 대화로 | ➕ **진료 기준** - 언제 꼭 진료받을지 기준 하나 |
+| ➕ **심정지** - 반응이 없고 숨을 쉬지 않으면 심정지 의심으로 | ➕ **약 질문** - 단정하지 말고, 조심할 이유 + 약사 · 의사 확인 |
+| ➕ **오늘 진료** - 오늘 진료가 필요한 질환은 따로 표시 | ➕ **예시** - 예시 문장을 그대로 쓰지 말고 새로 쓰기 |
 
 | 확인한 것 | 처음 | 지금 |
 | --- | :---: | :---: |
@@ -205,14 +207,22 @@ AI에게 주는 **지시문(프롬프트)을 두 갈래로 고쳤습니다.**
 | 🏥 병원에 갈 기준을 알려 주나요? | 38% (18/48) | **88%** (42/48) |
 | 🔕 필요 없는데 119를 말하나요? (낮을수록 좋음) | 46% (21/46) | **4%** (3/77) |
 
-**📚 검증 문항 근거** &nbsp;
-![질병관리청](https://img.shields.io/badge/질병관리청-0B4EA2?style=flat-square)
-![2025 응급처치 가이드라인](https://img.shields.io/badge/2025_응급처치_가이드라인-D32F2F?style=flat-square)
-![국가건강정보포털](https://img.shields.io/badge/국가건강정보포털-2E7D32?style=flat-square)
+<sub>규칙은 실제 지시문을 줄여 적은 것입니다. 응급 · 자해 안내는 응급 낱말 규칙과 함께 동작합니다.</sub>
 
-<sub>위 근거로 만든 어르신 건강 질문 597문항으로 채점했습니다. 응급 · 자해 안내는 응급 낱말 규칙과 함께 동작합니다.</sub>
+</details>
 
 ### 😊 4.3 AI 기분체크
+
+**말소리만 골라 받아쓰고, 기분과 위험을 따로 판단하게 고쳤습니다.**
+
+![AI 기분체크 개선](./images/mood-improve.png)
+
+**그 결과, 처음과 지금을 비교하면**
+
+![AI 기분체크 결과](./images/mood-results.png)
+
+<details>
+<summary>📝 결과 숫자를 글로 보기</summary>
 
 | 확인한 것 | 처음 | 지금 |
 | --- | :---: | :---: |
@@ -221,23 +231,25 @@ AI에게 주는 **지시문(프롬프트)을 두 갈래로 고쳤습니다.**
 | 💬 대답만 듣고 기분을 맞히나요? (800문장) | 75.4% | **83.8%** |
 | 🔕 안전한 날에 알림이 잘못 울리나요? (27명 × 7일, 낮을수록 좋음) | 33% | **4%** |
 
-**📚 검증 자료** &nbsp;
-![AI Hub 어르신 대화 음성](https://img.shields.io/badge/AI_Hub-어르신_대화_음성-0064FF?style=flat-square)
-![AI Hub 감성대화](https://img.shields.io/badge/AI_Hub-감성대화-0064FF?style=flat-square)
-![NAVER CareCall](https://img.shields.io/badge/NAVER-CareCall_안부_전화-03C75A?style=flat-square&logo=naver&logoColor=white)
+</details>
 
 ### ✅ 4.4 AI 성능 검증 방법
 
-근거와 출처가 있는 자료로, **"이렇게 시험하고 → 이러면 정답"** 으로 채점했습니다.
+**근거와 출처가 있는 자료로, "이렇게 시험하고 → 이러면 정답"으로 채점했습니다.**
 
 ![AI 성능 검증](./images/verification.png)
 
-| | 🚨 AI 이상 감지 | 🩺 AI 의료 챗봇 | 😊 AI 기분체크 |
-| --- | --- | --- | --- |
-| **근거 자료** | 계명대학교 화재 영상 · ETRI 부엌 칼 사용 영상 · CCTV · 어르신 낙상 영상 | 질병관리청 · 2025 응급처치 가이드라인 · 국가건강정보포털 | AI Hub 어르신 대화 음성 · AI Hub 감성대화 · 네이버 CareCall 안부 전화 |
-| **① 이렇게 시험** | 불이 난 영상 24개를 AI에게 보여 주고 | "가슴이 쪼이고 식은땀이 나요" 같은 질문 597개를 묻고 | "자식들한테 짐이 되기 싫어" 같은 말을 들려주고 |
-| **② 이러면 정답** | 불을 찾아 알리면 정답 (24개 중 20개 → 83.3%) | 119를 안내하면 정답 | 위험 신호로 알리면 정답 |
-| **검수** | 학습에 쓰지 않은 영상만 사용 | 팀원 2명이 문항 검수 | 팀원 2명이 정답 검수 |
+<details>
+<summary>📝 검증 방법을 글로 보기</summary>
+
+- **🚨 AI 이상 감지** - 계명대학교 화재 영상 · ETRI 부엌 칼 사용 영상 · CCTV · 어르신 낙상 영상
+  불이 난 영상 24개를 AI에게 보여 주고 → 불을 찾아 알리면 정답 (24개 중 20개 → 83.3%)
+- **🩺 AI 의료 챗봇** - 질병관리청 · 2025 응급처치 가이드라인 · 국가건강정보포털
+  "가슴이 쪼이고 식은땀이 나요" 같은 질문 597개를 묻고 → 119를 안내하면 정답 (팀원 2명이 문항 검수)
+- **😊 AI 기분체크** - AI Hub 어르신 대화 음성 · AI Hub 감성대화 · 네이버 CareCall 안부 전화
+  "자식들한테 짐이 되기 싫어" 같은 말을 들려주고 → 위험 신호로 알리면 정답 (팀원 2명이 정답 검수)
+
+</details>
 
 ---
 

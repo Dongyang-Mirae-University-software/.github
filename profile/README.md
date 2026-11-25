@@ -382,3 +382,4 @@ CareAI는 **AI가 먼저 알아차리고, 가족에게 바로 알리는** 통합
 | 🏁 1학기 최종발표 | [![PPT](./images/badges/ppt-b7e991.svg)](docs/실버브릿지_최종발표.pptx) |
 | 🗓️ 2학기 프로젝트 계획서 | [![PPT](./images/badges/ppt-b7e991.svg)](docs/실버브릿지_2학기_프로젝트계획서.pptx) |
 | 📈 2학기 중간평가 | [![PPT](./images/badges/ppt-b7e991.svg)](https://download.gosky.kr/d/SilverBridgeSky/%EC%8B%A4%EB%B2%84%EB%B8%8C%EB%A6%BF%EC%A7%80_2%ED%95%99%EA%B8%B0_%EC%A4%91%EA%B0%84%ED%8F%89%EA%B0%80.pptx) |
+| 🎓 2학기 최종발표 | [![PPT](./images/badges/ppt-b7e991.svg)](docs/실버브릿지_2학기_최종발표.pptx) |
